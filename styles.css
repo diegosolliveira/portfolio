@@ -1,0 +1,464 @@
+body {
+    margin: 0;
+    justify-content: center;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    color: #ffffff;
+    background:
+        radial-gradient(circle, rgba(124, 124, 124, 0.12) 1px, transparent 1px),
+        linear-gradient(#000000, #000000);
+
+    background-size: 18px 18px, 100% 100%;
+}
+
+.button-cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 86px;
+    height: 42px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.button-cv:hover {
+    border: 0.5px solid rgba(204, 65, 0, 0.15);
+    background-color: rgba(204, 65, 0, 0.11);
+    color: rgb(204, 65, 0);
+}
+
+.div-nav {
+    display: flex;
+    align-items: center;
+    gap: 78px;
+}
+
+#themeToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    background: transparent;
+    border-radius: 50%;
+
+    border: 0.5px solid rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+#themeToggle:hover {
+    border: 0.5px solid rgba(204, 65, 0, 0.15);
+    background-color: rgba(204, 65, 0, 0.11);
+    color: rgb(204, 65, 0);
+}
+
+body.light .button-cv {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    color: #303030;
+}
+
+body.light #themeToggle {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    color: #303030;
+}
+
+body.light .button-cv:hover {
+    border: 0.5px solid rgba(204, 65, 0, 0.15);
+    background-color: rgba(204, 65, 0, 0.11);
+    color: rgb(204, 65, 0);
+}
+
+body.light #themeToggle:hover {
+    border: 0.5px solid rgba(204, 65, 0, 0.15);
+    background-color: rgba(204, 65, 0, 0.11);
+    color: rgb(204, 65, 0);
+}
+
+body.light {
+    color: #303030;
+    background:
+        radial-gradient(circle, rgba(172, 172, 172, 0.12) 1px, transparent 1px),
+        linear-gradient(#ffffff, #ffffff);
+    background-size: 18px 18px, 100% 100%;
+
+}
+
+body.light .card,
+body.light header {
+    background: rgba(238, 238, 238, 0.5);
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+
+    p {
+        color: #616161;
+    }
+}
+
+body.light .card-container .card {
+    flex: 0 0 calc((100% - 5px) / 3);
+    cursor: pointer;
+    background-color: rgba(235, 235, 235, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.light .highlight3 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.light nav a {
+    color: #303030;
+}
+
+body.light nav a:hover {
+    color: rgb(204, 65, 0);
+    font-weight: 200;
+}
+
+body.light nav a.active {
+    color: rgb(204, 65, 0);
+    font-weight: 300;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.home .card-home {
+    width: 70%;
+    text-align: center;
+
+    h1 {
+        font-size: 52px;
+        font-weight: 400;
+    }
+}
+
+.highlight {
+    font-weight: 700;
+    color: rgb(204, 65, 0);
+}
+
+.highlight2 {
+    font-weight: 700;
+    color: rgb(204, 65, 0);
+    display: inline-block;
+    text-align: left;
+}
+
+.highlight3 {
+    font-size: 24px;
+    color: #ffffffa4;
+    margin-bottom: 24px;
+}
+
+#typing::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+header {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    padding: 18px;
+    border-radius: 8px;
+    z-index: 999;
+    overflow: hidden;
+
+    background: rgba(58, 58, 58, 0.15);
+    backdrop-filter: blur(8px);
+
+    border: 0.5px solid rgba(255, 255, 255, 0.07);
+}
+
+.div-header {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 22px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+nav a:hover {
+    color: rgb(204, 65, 0);
+    font-weight: 200;
+}
+
+nav a.active {
+    color: rgb(204, 65, 0);
+    font-weight: 300;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: rgba(58, 58, 58, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 42px 0px;
+}
+
+.section.aboutme {
+    width: 100%;
+    background-color: rgb(10 10 10);
+}
+
+.card-principal.aboutme p {
+    font-size: 22px;
+    color: #ffffffa4;
+    line-height: 36px;
+}
+
+body.light .card-principal.aboutme p {
+    color: #616161;
+}
+
+body.light .section.aboutme {
+    background-color: rgb(215 215 215);
+}
+
+.card-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+    max-width: 1400px;
+    padding: 92px;
+    border-radius: 8px;
+    gap: 16px;
+
+    h2 {
+        font-size: 44px;
+        margin: 0;
+        font-weight: 600;
+    }
+}
+
+.card-principal.aboutme {
+    display: flex;
+    flex-direction: column;
+    gap: 142px;
+    align-items: center;
+}
+
+.card-principal.aboutme .infos-aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-what-icando {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 36px;
+}
+
+body.light .what-icando {
+    background-color: #e1e1e1;
+
+    span {
+        text-align: left;
+        color: #616161;
+
+    }
+
+    svg path {
+        fill: #303030;
+    }
+}
+
+.what-icando {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(82, 82, 82, 0.1);
+    padding: 34px;
+    border-radius: 10px;
+
+    svg {
+        width: 42px;
+        height: 42px;
+    }
+
+    span {
+        text-align: left;
+        color: #a8a8a8;
+
+    }
+}
+
+.card-principal .image-square {
+    width: 300px;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-principal .image-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    padding: 38px;
+    border-radius: 10px;
+    gap: 8px;
+
+    h2 {
+        font-size: 24px;
+
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-top: 12px;
+        margin-bottom: 14px;
+    }
+
+    p {
+        letter-spacing: 1px;
+        line-height: 22px;
+        color: #ffffffa4;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+.div-infos {
+    display: flex;
+    justify-content: left;
+    gap: 12px;
+    width: fit-content;
+    margin-top: auto;
+
+    p {
+        font-size: 12px;
+        width: fit-content;
+        color: rgb(204, 65, 0);
+        border: 1px solid rgba(204, 65, 0, 0.5);
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+}
+
+body.light .div-infos p {
+    color: rgb(204, 65, 0);
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease;
+}
+
+.card-container .card {
+    flex: 0 0 calc((100% - 5px) / 3);
+    cursor: pointer;
+    background-color: rgba(82, 82, 82, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container .card:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+.card-container .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    background-color: rgba(10 10 10);
+    align-items: center;
+    gap: 16px;
+    padding: 38px 18px;
+    border-radius: 10px;
+}
+
+body.light .carousel-wrapper {
+    background-color: rgb(215 215 215);
+}
+
+.carousel {
+    overflow: hidden;
+    padding: 12px;
+    width: 100%;
+}
+
+.bi-chevron-left,
+.bi-chevron-right {
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.bi-chevron-left:hover,
+.bi-chevron-right:hover {
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    color: #a8a8a8;
+    margin: 8px;
+    padding: 20px;
+    font-size: 0.8rem;
+    padding: 18px;
+}
