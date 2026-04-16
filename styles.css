@@ -423,20 +423,20 @@ body.light .div-infos p {
 
 .carousel-wrapper {
     display: flex;
-    background-color: rgba(10 10 10);
+    /* background-color: rgba(10 10 10); */
     align-items: center;
     gap: 16px;
-    padding: 38px 18px;
+    padding: 32px 18px;
     border-radius: 10px;
 }
 
-body.light .carousel-wrapper {
+/* body.light .carousel-wrapper {
     background-color: rgb(215 215 215);
-}
+} */
 
 .carousel {
     overflow: hidden;
-    padding: 12px;
+    padding: 14px;
     width: 100%;
 }
 
