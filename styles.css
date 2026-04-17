@@ -1,13 +1,14 @@
 body {
     margin: 0;
-    justify-content: center;
     font-family: 'Zalando Sans Expanded', sans-serif;
     color: #ffffff;
-    background:
-        radial-gradient(circle, rgba(124, 124, 124, 0.12) 1px, transparent 1px),
-        linear-gradient(#000000, #000000);
+    background: #0b0618;
+}
 
-    background-size: 18px 18px, 100% 100%;
+canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
 }
 
 .button-cv {
@@ -26,9 +27,9 @@ body {
 }
 
 .button-cv:hover {
-    border: 0.5px solid rgba(204, 65, 0, 0.15);
-    background-color: rgba(204, 65, 0, 0.11);
-    color: rgb(204, 65, 0);
+    border: 0.5px solid rgba(131, 131, 131, 0.082);
+    background-color: rgba(131, 131, 131, 0.082);
+    color: rgb(255, 255, 255);
 }
 
 .div-nav {
@@ -55,31 +56,9 @@ body {
 }
 
 #themeToggle:hover {
-    border: 0.5px solid rgba(204, 65, 0, 0.15);
-    background-color: rgba(204, 65, 0, 0.11);
-    color: rgb(204, 65, 0);
-}
-
-body.light .button-cv {
-    border: 0.5px solid rgba(0, 0, 0, 0.1);
-    color: #303030;
-}
-
-body.light #themeToggle {
-    border: 0.5px solid rgba(0, 0, 0, 0.1);
-    color: #303030;
-}
-
-body.light .button-cv:hover {
-    border: 0.5px solid rgba(204, 65, 0, 0.15);
-    background-color: rgba(204, 65, 0, 0.11);
-    color: rgb(204, 65, 0);
-}
-
-body.light #themeToggle:hover {
-    border: 0.5px solid rgba(204, 65, 0, 0.15);
-    background-color: rgba(204, 65, 0, 0.11);
-    color: rgb(204, 65, 0);
+    border: 0.5px solid rgba(131, 131, 131, 0.082);
+    background-color: rgba(131, 131, 131, 0.082);
+    color: rgb(255, 255, 255);
 }
 
 body.light {
@@ -91,8 +70,7 @@ body.light {
 
 }
 
-body.light .card,
-body.light header {
+body.light .card {
     background: rgba(238, 238, 238, 0.5);
     border: 0.5px solid rgba(0, 0, 0, 0.1);
 
@@ -108,29 +86,11 @@ body.light .card-container .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-body.light .highlight3 {
-    color: rgba(0, 0, 0, 0.6);
-}
-
-body.light nav a {
-    color: #303030;
-}
-
-body.light nav a:hover {
-    color: rgb(204, 65, 0);
-    font-weight: 200;
-}
-
-body.light nav a.active {
-    color: rgb(204, 65, 0);
-    font-weight: 300;
-}
-
 .home {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 98vh;
 }
 
 .home .card-home {
@@ -139,24 +99,25 @@ body.light nav a.active {
 
     h1 {
         font-size: 52px;
-        font-weight: 400;
+        font-weight: 300;
+        color: #ffffff;
     }
 }
 
 .highlight {
     font-weight: 700;
-    color: rgb(204, 65, 0);
+    color: rgb(255, 255, 255);
 }
 
 .highlight2 {
     font-weight: 700;
-    color: rgb(204, 65, 0);
+    color: rgb(255, 255, 255);
     display: inline-block;
     text-align: left;
 }
 
 .highlight3 {
-    font-size: 24px;
+    font-size: 26px;
     color: #ffffffa4;
     margin-bottom: 24px;
 }
@@ -186,15 +147,13 @@ header {
     top: 8px;
     left: 8px;
     right: 8px;
-    padding: 18px;
+    padding: 12px;
     border-radius: 8px;
     z-index: 999;
-    overflow: hidden;
-
-    background: rgba(58, 58, 58, 0.15);
-    backdrop-filter: blur(8px);
-
-    border: 0.5px solid rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .div-header {
@@ -208,6 +167,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 16px;
+    color: #ffffff;
 }
 
 nav {
@@ -224,12 +184,12 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(204, 65, 0);
+    color: rgb(131, 131, 131);
     font-weight: 200;
 }
 
 nav a.active {
-    color: rgb(204, 65, 0);
+    color: rgb(131, 131, 131);
     font-weight: 300;
 }
 
@@ -237,8 +197,7 @@ nav a.active {
     display: flex;
     justify-content: center;
     margin: auto;
-    background: rgba(58, 58, 58, 0.1);
-    backdrop-filter: blur(8px);
+    background: rgba(17 17 17);
     padding: 42px 0px;
 }
 
@@ -247,7 +206,90 @@ nav a.active {
     background-color: rgb(10 10 10);
 }
 
-.card-principal.aboutme p {
+.card-principal.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.infos-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-principal.contact p {
+    color: #ffffffa4 !important;
+    font-size: 18px !important;
+    cursor: pointer;
+}
+
+.card-principal.contact p:hover {
+    color: #ffffff !important;
+}
+
+.email {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 262px;
+
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+
+    border-radius: 50px;
+    padding: 16px 24px;
+    font-size: 18px;
+    cursor: pointer;
+
+    overflow: hidden;
+    transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+.email::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+
+    z-index: 0;
+}
+
+/* conteúdo fica acima */
+.email span,
+.email .arrow {
+    position: relative;
+    z-index: 1;
+}
+
+/* hover */
+.email:hover::before {
+    transform: scaleX(1);
+}
+
+.email:hover {
+    color: #000;
+    border-color: #fff;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.email:hover .arrow {
+    transform: translateX(5px);
+}
+
+.card-principal.aboutme p,
+.card-principal.wcid p,
+.card-principal.contact p {
     font-size: 22px;
     color: #ffffffa4;
     line-height: 36px;
@@ -261,10 +303,53 @@ body.light .section.aboutme {
     background-color: rgb(215 215 215);
 }
 
+body.light .section {
+    background: #e1e1e1;
+}
+
+.card-principal.projects p {
+    font-size: 22px;
+    color: #ffffffa4;
+    line-height: 36px;
+    margin-top: 0px;
+}
+
+.card-principal.projects .card p {
+    font-size: 16px;
+    color: #ffffffa4;
+    line-height: 22px;
+}
+
+.card-principal.projects .card .div-infos p {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.card-principal.projects .card .div-infos {
+    display: flex;
+    justify-content: left;
+    gap: 12px;
+    width: fit-content;
+    margin-top: auto;
+}
+
+
+body.light .card-principal.projects .card .div-infos p {
+    color: #616161;
+}
+
+body.light .card-principal.projects p {
+    color: #616161;
+}
+
 .card-principal {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 38px;
     max-width: 1400px;
     padding: 92px;
@@ -279,17 +364,20 @@ body.light .section.aboutme {
 }
 
 .card-principal.aboutme {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 0fr;
     flex-direction: column;
     gap: 142px;
-    align-items: center;
 }
 
 .card-principal.aboutme .infos-aboutme {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+
+.card-principal.wcid .infos-aboutme {
+    display: flex;
+    flex-direction: column;
 }
 
 .container-what-icando {
@@ -324,22 +412,105 @@ body.light .what-icando {
     border-radius: 10px;
 
     svg {
-        width: 42px;
-        height: 42px;
+        width: 46px;
+        height: 46px;
     }
 
     span {
+        font-size: 14px;
         text-align: left;
         color: #a8a8a8;
+        letter-spacing: 0.9px;
 
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-top: 0;
+        font-weight: 600;
     }
 }
 
 .card-principal .image-square {
+    position: relative;
     width: 300px;
     height: 340px;
     border-radius: 10px;
-    overflow: hidden;
+}
+
+.image-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    position: relative;
+    z-index: 3;
+}
+
+.glow {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, #7c5cff, transparent 30%);
+    top: -60px;
+    left: -60px;
+    filter: blur(50px);
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.shape.square {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: -20px;
+    right: -20px;
+    z-index: 5;
+    animation: float 6s ease-in-out infinite;
+}
+
+.glass {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: -20px;
+    left: -20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 4;
+    animation: float 7s ease-in-out infinite;
+}
+
+.dot {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #ff6600;
+    border-radius: 50%;
+    top: 2.5%;
+    right: 0px;
+    z-index: 4;
+    animation: float 5.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .card-principal .image-square img {
@@ -378,22 +549,6 @@ body.light .what-icando {
     }
 }
 
-.div-infos {
-    display: flex;
-    justify-content: left;
-    gap: 12px;
-    width: fit-content;
-    margin-top: auto;
-
-    p {
-        font-size: 12px;
-        width: fit-content;
-        color: rgb(204, 65, 0);
-        border: 1px solid rgba(204, 65, 0, 0.5);
-        padding: 4px 8px;
-        border-radius: 4px;
-    }
-}
 
 body.light .div-infos p {
     color: rgb(204, 65, 0);
@@ -428,6 +583,27 @@ body.light .div-infos p {
     gap: 16px;
     padding: 32px 18px;
     border-radius: 10px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.carousel-dots span {
+    width: 8px;
+    height: 8px;
+    background: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-dots span.active {
+    background: #fff;
+    transform: scale(1.3);
 }
 
 /* body.light .carousel-wrapper {
