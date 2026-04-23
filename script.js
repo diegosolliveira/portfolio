@@ -293,8 +293,13 @@ function setup() {
 
 function draw() {
   time++
-  background(0, 100 - opt.tail)
-  
+
+  if (document.body.classList.contains("light")) {
+    background(255)
+  } else {
+    background(0, 100 - opt.tail)
+  }
+
   for (let p of Particles) {
     p.update()
     p.render()

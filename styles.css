@@ -26,6 +26,11 @@ canvas {
     cursor: pointer;
 }
 
+body.light .button-cv {
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    color: #303030;
+}
+
 .button-cv:hover {
     border: 0.5px solid rgba(199, 199, 199, 0.281);
     background-color: rgba(131, 131, 131, 0.082);
@@ -55,6 +60,11 @@ canvas {
     cursor: pointer;
 }
 
+body.light #themeToggle {
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    color: #303030;
+}
+
 #themeToggle:hover {
     border: 0.5px solid rgba(199, 199, 199, 0.281);
     background-color: rgba(131, 131, 131, 0.082);
@@ -63,17 +73,12 @@ canvas {
 
 body.light {
     color: #303030;
-    background:
-        radial-gradient(circle, rgba(172, 172, 172, 0.12) 1px, transparent 1px),
-        linear-gradient(#ffffff, #ffffff);
+    background: #0b0618;
     background-size: 18px 18px, 100% 100%;
 
 }
 
 body.light .card {
-    background: rgba(238, 238, 238, 0.5);
-    border: 0.5px solid rgba(0, 0, 0, 0.1);
-
     p {
         color: #616161;
     }
@@ -82,7 +87,7 @@ body.light .card {
 body.light .card-container .card {
     flex: 0 0 calc((100% - 5px) / 3);
     cursor: pointer;
-    background-color: rgba(235, 235, 235, 0.5);
+    background-color: rgb(223, 223, 223);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -92,6 +97,10 @@ body.light .card-container .card {
     justify-content: center;
     background-color: #00000070;
     height: 98vh;
+}
+
+body.light .home {
+    background-color: #ffffff70;
 }
 
 .home .card-home {
@@ -105,9 +114,19 @@ body.light .card-container .card {
     }
 }
 
+body.light .home .card-home {
+    h1 {
+        color: #303030;
+    }
+}
+
 .highlight {
     font-weight: 700;
     color: rgb(255, 255, 255);
+}
+
+body.light .highlight {
+    color: #303030;
 }
 
 .highlight2 {
@@ -117,10 +136,18 @@ body.light .card-container .card {
     text-align: left;
 }
 
+body.light .highlight2 {
+    color: #303030;
+}
+
 .highlight3 {
     font-size: 26px;
     color: #ffffffa4;
     margin-bottom: 24px;
+}
+
+body.light .highlight3 {
+    color: #616161;
 }
 
 #typing::after {
@@ -154,7 +181,7 @@ header {
     background: transparent;
     backdrop-filter: blur(22px);
     border: 0.5px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .div-header {
@@ -169,6 +196,18 @@ header h1 {
     margin: 0;
     font-size: 16px;
     color: #ffffff;
+}
+
+body.light header {
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+}
+
+body.light header h1 {
+    color: #303030;
+}
+
+body.light nav a {
+    color: #303030;
 }
 
 nav {
@@ -218,23 +257,25 @@ nav a.active {
     flex-direction: column;
 }
 
-.card-principal.contact p {
-    color: #ffffffa4 !important;
-    font-size: 18px !important;
-    cursor: pointer;
+.card-principal.contact .infos-contact span {
+    color: #a8a8a8;
+    font-size: 22px;
+    margin-top: 18px;
+    margin-bottom: 34px;
 }
 
-.card-principal.contact p:hover {
-    color: #ffffff !important;
+body.light .card-principal.contact .infos-contact span {
+    color: #616161;
 }
 
 .email {
+    font-family: 'Zalando Sans Expanded', sans-serif;
     position: relative;
     display: inline-flex;
     align-items: center;
     gap: 10px;
 
-    width: 262px;
+    width: 302px;
 
     background: transparent;
     border: 1px solid #fff;
@@ -249,34 +290,21 @@ nav a.active {
     transition: color 0.4s ease, border-color 0.4s ease;
 }
 
-.email::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #fff;
-
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-
-    z-index: 0;
-}
-
-/* conteúdo fica acima */
-.email span,
-.email .arrow {
-    position: relative;
-    z-index: 1;
-}
-
-/* hover */
-.email:hover::before {
-    transform: scaleX(1);
+body.light .email {
+    border: 1px solid #616161;
+    color: #616161;
 }
 
 .email:hover {
-    color: #000;
+    color: #000000;
+    background-color: #ffffff;
     border-color: #fff;
+}
+
+body.light .email:hover {
+    color: #ffffff;
+    background-color: #303030;
+    border-color: #303030;
 }
 
 .arrow {
@@ -295,16 +323,45 @@ nav a.active {
     line-height: 36px;
 }
 
+.card-principal.aboutme p,
+.card-principal.wcid p,
+.card-principal.contact .sociais p {
+    color: #ffffffa4;
+}
+
+.card-principal.aboutme p,
+.card-principal.wcid p,
+.card-principal.contact .sociais p:hover {
+    color: #dbdbdb;
+    cursor: pointer;
+}
+
+body.light .card-principal.aboutme p,
+.card-principal.wcid p, .card-principal.contact .sociais p {
+    color: #616161;
+}
+
+body.light .card-principal.aboutme p,
+.card-principal.wcid p, .card-principal.contact .sociais p:hover {
+    color: #303030;
+}
+
+body.light .card-principal.aboutme p,
+.card-principal.wcid p,
+.card-principal.contact p {
+    color: #616161;
+}
+
 body.light .card-principal.aboutme p {
     color: #616161;
 }
 
 body.light .section.aboutme {
-    background-color: rgb(215 215 215);
+    background-color: rgb(255, 255, 255);
 }
 
 body.light .section {
-    background: #e1e1e1;
+    background: #f3f3f3;
 }
 
 .card-principal.projects p {
@@ -487,6 +544,18 @@ body.light .what-icando {
     animation: float 7s ease-in-out infinite;
 }
 
+.glass2 {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    bottom: -28px;
+    left: -28px;
+    border-radius: 14px;
+    background: #ff6600;
+    z-index: 4;
+    animation: float 6s ease-in-out infinite;
+}
+
 .dot {
     position: absolute;
     width: 45px;
@@ -633,8 +702,13 @@ body.light .div-infos p {
 footer {
     text-align: center;
     color: #a8a8a8;
-    margin: 8px;
     padding: 20px;
     font-size: 0.8rem;
     padding: 18px;
+    background-color: #00000070;
+}
+
+body.light footer {
+    background-color: #ffffff70;
+    color: #616161;
 }
