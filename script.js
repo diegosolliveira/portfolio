@@ -167,10 +167,10 @@ toggle.addEventListener("click", () => {
 
 //JS para o background
 
-const deg = (a) => Math.PI / 180 * a
+const deg = (a) => Math.PI / 280 * a
 const rand = (v1, v2) => Math.floor(v1 + Math.random() * (v2 - v1))
 const opt = {
-  particles: window.width / 500 ? 1000 : 500,
+  particles: window.width / 500 ? 12000 : 500,
   noiseScale: 0.009,
   angle: Math.PI / 180 * -90,
   h1: rand(0, 360),
@@ -179,8 +179,8 @@ const opt = {
   s2: rand(20, 90),
   l1: rand(30, 80),
   l2: rand(30, 80),
-  strokeWeight: 1.2,
-  tail: 82,
+  strokeWeight: 92,
+  tail: 12,
 }
 const Particles = []
 let time = 0
@@ -191,7 +191,7 @@ document.body.addEventListener('click', () => {
   opt.s2 = rand(20, 90)
   opt.l1 = rand(30, 80)
   opt.l2 = rand(30, 80)
-  opt.angle += deg(random(60, 60)) * (Math.random() > .5 ? 1 : -1)
+  opt.angle += deg(random(10, 10)) * (Math.random() > .5 ? 1 : -1)
   
   for (let p of Particles) {
     p.randomize()
@@ -209,18 +209,18 @@ class Particle {
     this.ax = 0
     this.ay = 0
     this.hueSemen = Math.random()
-    this.hue = this.hueSemen > .5 ? 20 + opt.h1 : 20 + opt.h2
+    this.hue = this.hueSemen > .5 ? 60 + opt.h1 : 40 + opt.h2
     this.sat = this.hueSemen > .5 ? opt.s1 : opt.s2
     this.light = this.hueSemen > .5 ? opt.l1 : opt.l2
-    this.maxSpeed = this.hueSemen > .5 ? 3 : 2
+    this.maxSpeed = this.hueSemen > .5 ? 2 : 2
   }
   
   randomize() {
     this.hueSemen = Math.random()
-    this.hue = this.hueSemen > .5 ? 20 + opt.h1 : 20 + opt.h2
+    this.hue = this.hueSemen > .5 ? 60 + opt.h1 : 40 + opt.h2
     this.sat = this.hueSemen > .5 ? opt.s1 : opt.s2
     this.light = this.hueSemen > .5 ? opt.l1 : opt.l2
-    this.maxSpeed = this.hueSemen > .5 ? 3 : 2
+    this.maxSpeed = this.hueSemen > .5 ? 2 : 2
   }
   
   update() {

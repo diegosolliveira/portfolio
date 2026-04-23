@@ -27,7 +27,7 @@ canvas {
 }
 
 .button-cv:hover {
-    border: 0.5px solid rgba(131, 131, 131, 0.082);
+    border: 0.5px solid rgba(199, 199, 199, 0.281);
     background-color: rgba(131, 131, 131, 0.082);
     color: rgb(255, 255, 255);
 }
@@ -56,7 +56,7 @@ canvas {
 }
 
 #themeToggle:hover {
-    border: 0.5px solid rgba(131, 131, 131, 0.082);
+    border: 0.5px solid rgba(199, 199, 199, 0.281);
     background-color: rgba(131, 131, 131, 0.082);
     color: rgb(255, 255, 255);
 }
@@ -90,6 +90,7 @@ body.light .card-container .card {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #00000070;
     height: 98vh;
 }
 
@@ -150,9 +151,9 @@ header {
     padding: 12px;
     border-radius: 8px;
     z-index: 999;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    backdrop-filter: blur(22px);
+    border: 0.5px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -181,16 +182,15 @@ nav a {
     text-decoration: none;
     cursor: pointer;
     font-weight: 100;
+    letter-spacing: 0.6px;
 }
 
 nav a:hover {
-    color: rgb(131, 131, 131);
-    font-weight: 200;
+    color: rgb(190, 190, 190);
 }
 
 nav a.active {
-    color: rgb(131, 131, 131);
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .section {
