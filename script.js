@@ -1,5 +1,5 @@
 function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
 // JS para o carousel
@@ -11,38 +11,38 @@ const prevBtn = document.querySelector(".bi-chevron-left");
 let index = 0;
 
 nextBtn.addEventListener("click", () => {
-    const totalCards = container.children.length;
-    index = (index + 1) % totalCards;
-    updateCarousel();
-    updateDots();
+  const totalCards = container.children.length;
+  index = (index + 1) % totalCards;
+  updateCarousel();
+  updateDots();
 });
 
 prevBtn.addEventListener("click", () => {
-    const totalCards = container.children.length;
-    index = (index - 1 + totalCards) % totalCards;
-    updateCarousel();
-    updateDots();
+  const totalCards = container.children.length;
+  index = (index - 1 + totalCards) % totalCards;
+  updateCarousel();
+  updateDots();
 });
 
 function getVisibleCards() {
-    const containerWidth = container.parentElement.offsetWidth;
-    const card = container.children[0];
-    const style = window.getComputedStyle(container);
-    const gap = parseInt(style.gap);
+  const containerWidth = container.parentElement.offsetWidth;
+  const card = container.children[0];
+  const style = window.getComputedStyle(container);
+  const gap = parseInt(style.gap);
 
-    const cardFullWidth = card.offsetWidth + gap;
+  const cardFullWidth = card.offsetWidth + gap;
 
-    return Math.floor(containerWidth / cardFullWidth);
+  return Math.floor(containerWidth / cardFullWidth);
 }
 
 function updateCarousel() {
-    const card = container.children[0];
-    const style = window.getComputedStyle(container);
-    const gap = parseInt(style.gap);
+  const card = container.children[0];
+  const style = window.getComputedStyle(container);
+  const gap = parseInt(style.gap);
 
-    const move = card.offsetWidth + gap;
+  const move = card.offsetWidth + gap;
 
-    container.style.transform = `translateX(-${index * move}px)`;
+  container.style.transform = `translateX(-${index * move}px)`;
 }
 
 // js dots
@@ -50,28 +50,28 @@ function updateCarousel() {
 const dotsContainer = document.getElementById("dots");
 
 function createDots() {
-    const totalCards = container.children.length;
+  const totalCards = container.children.length;
 
-    for (let i = 0; i < totalCards; i++) {
-        const dot = document.createElement("span");
+  for (let i = 0; i < totalCards; i++) {
+    const dot = document.createElement("span");
 
-        dot.addEventListener("click", () => {
-            index = i;
-            updateCarousel();
-            updateDots();
-        });
+    dot.addEventListener("click", () => {
+      index = i;
+      updateCarousel();
+      updateDots();
+    });
 
-        dotsContainer.appendChild(dot);
-    }
+    dotsContainer.appendChild(dot);
+  }
 }
 
 
 function updateDots() {
-    const dots = dotsContainer.children;
+  const dots = dotsContainer.children;
 
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].classList.toggle("active", i === index);
-    }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.toggle("active", i === index);
+  }
 }
 
 createDots();
@@ -119,7 +119,7 @@ typeEffect();
 const links = document.querySelectorAll("nav a");
 
 links.forEach(link => {
-  link.addEventListener("click", function() {
+  link.addEventListener("click", function () {
     links.forEach(l => l.classList.remove("active"));
     this.classList.add("active");
   });
@@ -192,7 +192,7 @@ document.body.addEventListener('click', () => {
   opt.l1 = rand(30, 80)
   opt.l2 = rand(30, 80)
   opt.angle += deg(random(10, 10)) * (Math.random() > .5 ? 1 : -1)
-  
+
   for (let p of Particles) {
     p.randomize()
   }
@@ -214,7 +214,7 @@ class Particle {
     this.light = this.hueSemen > .5 ? opt.l1 : opt.l2
     this.maxSpeed = this.hueSemen > .5 ? 2 : 2
   }
-  
+
   randomize() {
     this.hueSemen = Math.random()
     this.hue = this.hueSemen > .5 ? 60 + opt.h1 : 40 + opt.h2
@@ -222,40 +222,40 @@ class Particle {
     this.light = this.hueSemen > .5 ? opt.l1 : opt.l2
     this.maxSpeed = this.hueSemen > .5 ? 2 : 2
   }
-  
+
   update() {
     this.follow()
-    
+
     this.vx += this.ax
     this.vy += this.ay
-    
+
     var p = Math.sqrt(this.vx * this.vx + this.vy * this.vy)
     var a = Math.atan2(this.vy, this.vx)
     var m = Math.min(this.maxSpeed, p)
     this.vx = Math.cos(a) * m
     this.vy = Math.sin(a) * m
-    
+
     this.x += this.vx
     this.y += this.vy
     this.ax = 0
     this.ay = 0
-    
+
     this.edges()
   }
-  
+
   follow() {
     let angle = (noise(this.x * opt.noiseScale, this.y * opt.noiseScale, time * opt.noiseScale)) * Math.PI * 0.5 + opt.angle
-    
+
     this.ax += Math.cos(angle)
     this.ay += Math.sin(angle)
-    
+
   }
-  
+
   updatePrev() {
     this.lx = this.x
     this.ly = this.y
   }
-  
+
   edges() {
     if (this.x < 0) {
       this.x = width
@@ -274,8 +274,8 @@ class Particle {
       this.updatePrev()
     }
   }
-  
-  render () {
+
+  render() {
     stroke(`hsla(${this.hue}, ${this.sat}%, ${this.light}%, .5)`)
     line(this.x, this.y, this.lx, this.ly)
     this.updatePrev()
@@ -310,5 +310,14 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight)
 }
+
+// botão para pdf do cv
+
+document.getElementById("downloadCV").addEventListener("click", () => {
+  const link = document.createElement("a")
+  link.href = "/archives/cv.pdf"
+  link.download = "Diego_Oliveira_CV.pdf"
+  link.click()
+})
 
 

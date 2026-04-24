@@ -323,26 +323,37 @@ body.light .email:hover {
     line-height: 36px;
 }
 
-.card-principal.aboutme p,
-.card-principal.wcid p,
-.card-principal.contact .sociais p {
+.card-principal.wcid .infos-aboutme p {
     color: #ffffffa4;
 }
 
-.card-principal.aboutme p,
-.card-principal.wcid p,
-.card-principal.contact .sociais p:hover {
+body.light .card-principal.wcid .infos-aboutme p {
+    color: #616161;
+}
+
+.card-principal.contact .sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card-principal.contact .sociais a {
+    font-size: 22px;
+    line-height: 36px;
+    color: #ffffffa4;
+    text-decoration: none;
+}
+
+.card-principal.contact .sociais a:hover {
     color: #dbdbdb;
     cursor: pointer;
 }
 
-body.light .card-principal.aboutme p,
-.card-principal.wcid p, .card-principal.contact .sociais p {
+body.light .card-principal.contact .sociais a {
     color: #616161;
 }
 
-body.light .card-principal.aboutme p,
-.card-principal.wcid p, .card-principal.contact .sociais p:hover {
+body.light .card-principal.contact .sociais a:hover {
     color: #303030;
 }
 
