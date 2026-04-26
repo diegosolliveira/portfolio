@@ -80,9 +80,8 @@ updateDots();
 // JS para Efeito de digitação
 
 const words = [
-  "Product Designer. ",
   "UI/UX Designer. ",
-  "Designer de Produtos. "
+  "Web Designer. "
 ];
 
 let wordIndex = 0;
