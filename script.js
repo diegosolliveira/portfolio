@@ -2,6 +2,46 @@ function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
+const sections = document.querySelectorAll("section");
+const navlinks = document.querySelectorAll("a[data-section]");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 190;
+    const sectionHeight = section.clientHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navlinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("data-section") === current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+//section transition
+const sections2 = document.querySelectorAll(".card-principal");
+
+const observerSection = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+sections2.forEach(section => {
+  observerSection.observe(section);
+});
+
 // JS para o carousel
 
 const container = document.getElementById("cardContainer");

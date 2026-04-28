@@ -21,10 +21,13 @@
 
             <div class="div-nav">
                 <nav>
-                    <a onclick="scrollToSection('home')" class="active">Início</a>
-                    <a onclick="scrollToSection('projects')">Projetos</a>
-                    <a onclick="scrollToSection('aboutme')">Sobre</a>
-                    <a onclick="scrollToSection('contact')">Contato</a>
+                    <a data-section="home" onclick="scrollToSection('home')" class="active">Início</a>
+                    <a data-section="projects" onclick="scrollToSection('projects')">Projetos</a>
+                    <a data-section="aboutme" onclick="scrollToSection('aboutme')">Sobre</a>
+                    <a data-section="contact" onclick="scrollToSection('contact')">Contato</a>
+
+                </nav>
+                <div class="div-nav-buttons">
                     <button id="downloadCV" class="button-cv">CV
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-download" viewBox="0 0 16 16">
@@ -34,11 +37,10 @@
                                 d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                         </svg>
                     </button>
-                </nav>
-
-                <button id="themeToggle">
-                    <span id="iconWrapper"></span>
-                </button>
+                    <button id="themeToggle">
+                        <span id="iconWrapper"></span>
+                    </button>
+                </div>
             </div>
 
         </div>
@@ -72,70 +74,83 @@
                     <div id="cardContainer" class="card-container">
                         <div class="card">
                             <img src="/img/weavetrip.webp" alt="">
-                            <div class="project-infos">
-                                <h3>WeaveTrip</h3>
-                                <span class="project-date">2025</span>
-                            </div>
-                            <p>O WeaveTrip é uma plataforma de gestão de pacotes turísticos que centraliza o controle de
-                                reservas, usuários e ofertas de viagem.</p>
-                            <div class="div-infos">
-                                <p class="p-infos">UI/UX</p>
-                                <p class="p-infos">Front-end</p>
+                            <div class="card-conteudo">
+                                <div class="project-infos">
+                                    <h3>WeaveTrip</h3>
+                                    <span class="project-date">2025</span>
+                                </div>
+                                <p>O WeaveTrip é uma plataforma de gestão de pacotes turísticos que centraliza o
+                                    controle de
+                                    reservas, usuários e ofertas de viagem.</p>
+                                <div class="div-infos">
+                                    <p class="p-infos">UI/UX</p>
+                                    <p class="p-infos">Front-end</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card">
                             <img src="/img/clipo.webp" alt="">
-                            <div class="project-infos">
-                                <h3>Clipo</h3>
-                                <span class="project-date">2025</span>
-                            </div>
-                            <p>O Clipo é um aplicativo simples de vídeos que permite salvar, assistir depois e marcar
-                                favoritos.</p>
-                            <div class="div-infos">
-                                <p class="p-infos">UI/UX</p>
+                            <div class="card-conteudo">
+                                <div class="project-infos">
+                                    <h3>Clipo</h3>
+                                    <span class="project-date">2025</span>
+                                </div>
+                                <p>O Clipo é um aplicativo simples de vídeos que permite salvar, assistir depois e
+                                    marcar
+                                    favoritos.</p>
+                                <div class="div-infos">
+                                    <p class="p-infos">UI/UX</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card">
                             <img src="/img/checkae.webp" alt="">
-                            <div class="project-infos">
-                                <h3>CheckAê</h3>
-                                <span class="project-date">2024</span>
-                            </div>
-                            <p>O Checkaê é uma plataforma digital que registra e controla presenças de forma simples e
-                                confiável.</p>
-                            <div class="div-infos">
-                                <p class="p-infos">Desing</p>
-                                <p class="p-infos">Front-end</p>
+                            <div class="card-conteudo">
+                                <div class="project-infos">
+                                    <h3>CheckAê</h3>
+                                    <span class="project-date">2024</span>
+                                </div>
+                                <p>O Checkaê é uma plataforma digital que registra e controla presenças de forma simples
+                                    e
+                                    confiável.</p>
+                                <div class="div-infos">
+                                    <p class="p-infos">Desing</p>
+                                    <p class="p-infos">Front-end</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card">
                             <img src="/img/centralcaverna.webp" alt="">
-                            <div class="project-infos">
-                                <h3>Central Caverna</h3>
-                                <span class="project-date">2024</span>
-                            </div>
-                            <p>A Central Caverna é uma plataforma de foco e organização pessoal que centraliza
-                                ferramentas de produtividade, hábitos e desenvolvimento em um único ambiente.</p>
-                            <div class="div-infos">
-                                <p class="p-infos">UI/UX</p>
-                                <p class="p-infos">Front-end</p>
+                            <div class="card-conteudo">
+                                <div class="project-infos">
+                                    <h3>Central Caverna</h3>
+                                    <span class="project-date">2024</span>
+                                </div>
+                                <p>A Central Caverna é uma plataforma de foco e organização pessoal que centraliza
+                                    ferramentas de produtividade, hábitos e desenvolvimento em um único ambiente.</p>
+                                <div class="div-infos">
+                                    <p class="p-infos">UI/UX</p>
+                                    <p class="p-infos">Front-end</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card">
                             <img src="/img/espacosdinamizadores.webp" alt="">
-                            <div class="project-infos">
-                                <h3>Espaços Dinamizadores</h3>
-                                <span class="project-date">2023</span>
-                            </div>
-                            <p>O sistema Espaços Dinamizadores é uma plataforma voltada para o registro e gestão das
-                                atividades realizadas nos ambientes de inovação e coworking.</p>
-                            <div class="div-infos">
-                                <p class="p-infos">UI/UX</p>
-                                <p class="p-infos">Front-end</p>
+                            <div class="card-conteudo">
+                                <div class="project-infos">
+                                    <h3>Espaços Dinamizadores</h3>
+                                    <span class="project-date">2023</span>
+                                </div>
+                                <p>O sistema Espaços Dinamizadores é uma plataforma voltada para o registro e gestão das
+                                    atividades realizadas nos ambientes de inovação e coworking.</p>
+                                <div class="div-infos">
+                                    <p class="p-infos">UI/UX</p>
+                                    <p class="p-infos">Front-end</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,11 +171,20 @@
         <div class="card-principal aboutme">
             <div class="infos-aboutme">
                 <h2>Sobre mim</h2>
-                <p>Olá, me chamo Diego Oliveira. Sou Analista de Sistemas formado pela Universidade Estadual do Sudoeste
-                    da
-                    Bahia (UESB) e UX/UI Designer Júnior com experiência em
-                    prototipação, front-end e colaboração entre times, criando produtos digitais simples, intuitivos e
-                    pensados para o usuário real.</p>
+                <p>
+                    Sou Diego Oliveira, <span class="highlight2">Analista de Sistemas</span> formado pela Universidade Estadual do Sudoeste da Bahia e
+                    <span class="highlight2">UX/UI Designer Júnior</span>.
+
+                    <br><br>
+
+                    Iniciei no <span class="highlight2">front-end</span> e, com o tempo, direcionei meu foco para
+                    <span class="highlight2">design e experiência do usuário</span>.
+
+                    <br><br>
+
+                    Hoje, crio <span class="highlight2">interfaces simples, funcionais e consistentes</span>,
+                    unindo visão técnica e atenção aos detalhes.
+                </p>
             </div>
 
 
@@ -178,7 +202,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section id="aboutme" class="section">
         <div class="card-principal wcid">
             <div class="infos-aboutme">
                 <h2>O que posso fazer por você como designer?</h2>
@@ -309,7 +333,7 @@
         <div class="card-principal contact">
             <div class="infos-contact">
                 <h2>Vamos trabalhar juntos?</h2>
-                <span>Entre em contato.</span>
+                <span>Me mande uma mensagem e responderei o mais breve possível.</span>
                 <button class="email"
                     onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=diegolvr14@gmail.com','_blank')">
                     diegolvr14@gmail.com
