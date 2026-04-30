@@ -11,7 +11,7 @@ body {
 
 body.light {
     color: #303030;
-    background: #ffffff;
+    background: #f5f2ef;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.055) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 0, 0, 0.055) 1px, transparent 1px);
@@ -113,7 +113,7 @@ body.light .card {
 }
 
 body.light .card-container .card {
-    background-color: rgb(223, 223, 223);
+    background-color: #ffffff;
     border: 0.5px solid rgba(151, 151, 151, 0.2);
 }
 
@@ -121,20 +121,23 @@ body.light .card-container .card {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00000070;
+    background-color: #0000000c;
     height: 98vh;
 }
 
 body.light .home {
-    background-color: #ffffff70;
+    background-color: #ffffff0c;
 }
 
 .home .card-home {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     width: 70%;
     text-align: center;
 
     h1 {
-        font-size: 52px;
+        font-size: 62px;
         font-weight: 300;
         color: #ffffff;
     }
@@ -309,7 +312,8 @@ nav a.active {
 
 .card-principal.contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 68px;
     justify-content: space-between;
     width: 100%;
 }
@@ -419,6 +423,12 @@ body.light .email:hover {
     }
 }
 
+body.light .stacks {
+    color: #616161;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgba(151, 151, 151, 0.4);
+}
+
 .card-principal.wcid .infos-aboutme p {
     color: #ffffffa4;
 }
@@ -433,8 +443,29 @@ body.light .card-principal.wcid .infos-aboutme p {
     gap: 14px;
 }
 
+.card-principal.contact .sociais .div-sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+
+    .stacks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 24px;
+
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    }
+}
+
+.card-principal.contact .sociais .div-sociais .stacks:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
 .card-principal.contact .sociais a {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 36px;
     color: #ffffffa4;
     text-decoration: none;
@@ -464,11 +495,12 @@ body.light .card-principal.aboutme p {
 }
 
 body.light .section.aboutme {
-    background-color: rgb(255, 255, 255);
+    background-color: #ede9e4;
 }
 
 body.light .section {
-    background: #f3f3f3;
+    background: #f5f2ef;
+    border-top: 0.5px solid rgba(151, 151, 151, 0.2);
 }
 
 .card-principal.projects p {
@@ -505,7 +537,7 @@ body.light .section {
 
 body.light .card-principal.projects .card .div-infos p {
     color: #616161;
-    background-color: rgba(145, 145, 145, 0.29);
+    background-color: rgba(145, 145, 145, 0.11);
     border: 0.5px solid rgba(151, 151, 151, 0.2);
 }
 
@@ -527,7 +559,7 @@ body.light .card-principal.projects p {
 }
 
 .text-title {
-    font-size: 58px;
+    font-size: 62px;
     margin: 0;
     font-weight: 800;
 }
@@ -565,17 +597,13 @@ body.light .card-principal.projects p {
 }
 
 body.light .what-icando {
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     border: 0.5px solid rgba(151, 151, 151, 0.2);
 
     span {
         text-align: left;
         color: #616161;
 
-    }
-
-    svg path {
-        fill: #303030;
     }
 }
 
@@ -591,8 +619,12 @@ body.light .what-icando {
     border-radius: 10px;
 
     svg {
-        width: 46px;
-        height: 46px;
+        width: 36px;
+        height: 36px;
+    }
+
+    svg path {
+        fill: #ff6600;
     }
 
     span {
@@ -829,14 +861,31 @@ body.light .div-infos p {
     opacity: 1;
 }
 
+.box-icon {
+    background-color: #ff660011;
+    padding: 14px 14px;
+    border: 0.5px solid #ff66009c;
+    border-radius: 10px;
+}
+
 footer {
+    position: relative;
     text-align: center;
     color: #a8a8a8;
-    padding: 20px;
-    font-size: 0.8rem;
     padding: 18px;
-    background-color: #00000070;
-    border-top: 0.5px solid #ffffff12;
+    font-size: 0.8rem;
+    background: transparent;
+}
+
+footer::before {
+    content: "";
+    background: linear-gradient(90deg, transparent, #ff6600, transparent);
+    width: 70%;
+    height: 0.5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 body.light footer {
