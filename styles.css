@@ -313,7 +313,7 @@ nav a.active {
 .card-principal.contact {
     display: flex;
     flex-direction: column;
-    gap: 68px;
+    gap: 88px;
     justify-content: space-between;
     width: 100%;
 }
@@ -328,6 +328,7 @@ nav a.active {
     font-family: 'Zalando Sans Expanded', sans-serif;
     position: relative;
     display: inline-flex;
+    margin-top: 22px;
     align-items: center;
     gap: 10px;
 
@@ -343,7 +344,7 @@ nav a.active {
     cursor: pointer;
 
     overflow: hidden;
-    transition: color 0.4s ease, border-color 0.4s ease;
+    transition: color 0.2s ease, border-color 0.1s ease;
 }
 
 body.light .email {
@@ -452,6 +453,7 @@ body.light .card-principal.wcid .infos-aboutme p {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 12px;
         padding: 6px 24px;
 
         transition: transform 0.4s ease, box-shadow 0.4s ease;
