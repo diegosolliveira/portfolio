@@ -464,6 +464,10 @@ body.light .card-principal.wcid .infos-aboutme p {
 .card-principal.contact .sociais .div-sociais .stacks:hover {
     cursor: pointer;
     transform: translateY(-4px);
+    
+    a {
+        color: #ff6600;
+    }
 }
 
 .card-principal.contact .sociais a {
@@ -471,11 +475,6 @@ body.light .card-principal.wcid .infos-aboutme p {
     line-height: 36px;
     color: #ffffffa4;
     text-decoration: none;
-}
-
-.card-principal.contact .sociais a:hover {
-    color: #ff6600;
-    cursor: pointer;
 }
 
 body.light .card-principal.contact .sociais a {
