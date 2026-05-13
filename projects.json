@@ -1,0 +1,75 @@
+{
+  "projects": [
+    {
+      "title": "WeaveTrip",
+      "client": "CEPEDI",
+      "date": "2025",
+      "image": "/img/weavetrip.webp",
+      "description": "Plataforma de gestão de pacotes turísticos que centraliza reservas, usuários e ofertas de viagem.",
+      "fullDescription": "Plataforma de gestão de pacotes turísticos que centraliza reservas, usuários e ofertas de viagem.",
+      "gallery": [
+        "/img/weavetrip.webp",
+        "/img/weavetrip-1.webp",
+        "/img/weavetrip-2.webp"
+      ],
+      "tags": ["UI/UX", "Front-end"]
+    },
+    {
+      "title": "Clipo",
+      "client": "Projeto de estudo",
+      "date": "2025",
+      "image": "/img/clipo.webp",
+      "description": "Aplicativo de vídeos com foco em praticidade, permitindo salvar, favoritar e assistir conteúdos posteriormente de forma intuitiva.",
+      "fullDescription": "Aplicativo de vídeos desenvolvido para proporcionar uma experiência prática e organizada, permitindo salvar conteúdos, assistir posteriormente e marcar vídeos favoritos de forma simples e intuitiva.",
+      "gallery": [
+        "/img/clipo.webp",
+        "/img/clipopicture1.webp",
+        "/img/clipopicture2.webp",
+        "/img/clipopicture3.webp"
+      ],
+      "tags": ["UI/UX"]
+    },
+    {
+      "title": "CheckAê",
+      "client": "CPDS",
+      "date": "2024",
+      "image": "/img/checkae.webp",
+      "description": "Plataforma digital para registro e controle de presenças.",
+      "fullDescription": "Plataforma digital para registro e controle de presenças.",
+      "gallery": [
+        "/img/checkae.webp",
+        "/img/checkae-1.webp",
+        "/img/checkae-2.webp"
+      ],
+      "tags": ["Design", "Front-end"]
+    },
+    {
+      "title": "Central Caverna",
+      "client": "Grupo Sideral",
+      "date": "2024",
+      "image": "/img/centralcaverna.webp",
+      "description": "SaaS de produtividade, foco e organização pessoal.",
+      "fullDescription": "SaaS de produtividade, foco e organização pessoal.",
+      "gallery": [
+        "/img/centralcaverna.webp",
+        "/img/centralcaverna-1.webp",
+        "/img/centralcaverna-2.webp"
+      ],
+      "tags": ["UI/UX", "Front-end"]
+    },
+    {
+      "title": "Espaços Dinamizadores",
+      "client": "CPDS",
+      "date": "2023",
+      "image": "/img/espacosdinamizadores.webp",
+      "description": "Sistema para gestão de atividades em ambientes de inovação.",
+      "fullDescription": "Sistema para gestão de atividades em ambientes de inovação.",
+      "gallery": [
+        "/img/espacosdinamizadores.webp",
+        "/img/espacosdinamizadores-1.webp",
+        "/img/espacosdinamizadores-2.webp"
+      ],
+      "tags": ["UI/UX", "Front-end"]
+    }
+  ]
+}
