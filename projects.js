@@ -276,9 +276,9 @@ fetch("projects.json")
 
       card.style.cursor = "pointer";
 
-      card.addEventListener("click", () => {
-        openModal(project);
-      });
+      // card.addEventListener("click", () => {
+      //   openModal(project);
+      // }); LEMBRAR DE TIRAR QUANDO TIVER FEITO TODA PARTE DO MODAL
 
       projectsContainer.appendChild(card);
     });

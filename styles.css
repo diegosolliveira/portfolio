@@ -1143,6 +1143,7 @@ body.light .what-icando {
     flex-direction: row;
     gap: 12px;
     width: fit-content;
+    flex-wrap: wrap;
 }
 
 .card-principal.aboutme .div-infos p {
@@ -1156,6 +1157,7 @@ body.light .what-icando {
     padding: 0px 12px;
     border-radius: 22px;
     border: 0.5px solid #2e2e2e;
+    margin: 0px;
 }
 
 body.light .card-principal.aboutme .div-infos p {
