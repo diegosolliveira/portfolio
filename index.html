@@ -19,15 +19,16 @@
         <div class="div-header">
             <h1>Diego Oliveira</h1>
 
-            <div class="div-nav">
-                <nav>
-                    <a data-section="home" onclick="scrollToSection('home')" class="active">Início</a>
-                    <a data-section="projects" onclick="scrollToSection('projects')">Projetos</a>
-                    <a data-section="aboutme" onclick="scrollToSection('aboutme')">Sobre</a>
-                    <a data-section="contact" onclick="scrollToSection('contact')">Contato</a>
+            <div class="div-nav-buttons">
+                <div class="div-nav">
+                    <nav>
+                        <a data-section="home" onclick="scrollToSection('home')" class="active">Início</a>
+                        <a data-section="projects" onclick="scrollToSection('projects')">Projetos</a>
+                        <a data-section="aboutme" onclick="scrollToSection('aboutme')">Sobre</a>
+                        <a data-section="contact" onclick="scrollToSection('contact')">Contato</a>
 
-                </nav>
-                <div class="div-nav-buttons">
+                    </nav>
+
                     <button id="downloadCV" class="button-cv">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-download" viewBox="0 0 16 16">
@@ -37,10 +38,16 @@
                                 d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                         </svg> CV
                     </button>
-                    <button id="themeToggle">
-                        <span id="iconWrapper"></span>
-                    </button>
+
                 </div>
+
+                <button id="themeToggle">
+                    <span id="iconWrapper"></span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle">
+                    ☰
+                </button>
             </div>
 
         </div>
@@ -96,8 +103,32 @@
                     <span class="subtitle-line"></span>
                     <span class="subtitle">03. Sobre mim</span>
                 </div>
-                <h2 class="text-title">Diego Oliveira</h2>
-                <span class="highlight3">Design que conecta pessoas a produtos.</span>
+
+                <div class="div-aboutme">
+                    <div>
+                        <h2 class="text-title">Diego Oliveira</h2>
+                        <span class="highlight3">Design que conecta pessoas a produtos.</span>
+                    </div>
+
+                    <div class="image-square mobile">
+                        <div class="glow"></div>
+
+                        <div class="shape square"></div>
+                        <div class="dotdot"></div>
+                        <div class="glass"></div>
+
+                        <div>
+                            <img src="/img/me.webp" alt="">
+
+                            <div class="glass2">
+                                <span class="ball"></span>
+                                <span>Disponível para trabalho</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
 
                 <p>
                     UI/UX Designer e Desenvolvedor Front-end graduado em Sistemas de Informação. Sou especialista em
@@ -105,7 +136,7 @@
                     visualmente consistentes.
 
                     <br> <br>
-                    
+
                     Unindo minha bagagem em design centrado no usuário à sólida capacidade técnica em desenvolvimento
                     web, elimino o gap entre o protótipo e o código final. Crio interfaces responsivas, otimizadas e
                     estratégicas, sempre focadas em gerar valor real e resultados de conversão.
@@ -126,7 +157,7 @@
 
                 <div class="div-stacks">
 
-                    <button id="downloadCV" class="button-cv">
+                    <button id="downloadCV" class="button-cv mobile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-download" viewBox="0 0 16 16">
                             <path
@@ -138,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="image-square">
+            <div class="image-square desktop">
                 <div class="glow"></div>
 
                 <div class="shape square"></div>

@@ -187,3 +187,9 @@ document.getElementById("downloadCV").addEventListener("click", () => {
 })
 
 
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.querySelector(".div-nav");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
