@@ -441,20 +441,26 @@ body.light .email:hover {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     width: 100%;
+    margin-bottom: 28px;
 }
 
 .modal-content {
     padding: 0px 36px 36px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
 .modal-line {
     display: flex;
     width: 100%;
     height: 0.5px;
-    margin-top: 32px;
-    margin-bottom: 32px;
     background-color: #ffffff15;
     border-radius: 2px;
+}
+
+body.light .modal-line {
+    background-color: #00000015;
 }
 
 .modal-date {
@@ -464,6 +470,45 @@ body.light .email:hover {
     background-color: rgb(87 87 87 / 29%);
     font-size: 12px;
     color: #a8a8a8;
+}
+
+body.light .modal-date {
+    color: #616161;
+    background-color: rgba(145, 145, 145, 0.11);
+    border: 0.5px solid rgba(151, 151, 151, 0.2);
+}
+
+.modal-site {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 22px;
+    width: fit-content;
+    background-color: rgb(87 87 87 / 29%);
+    border: 0.5px solid transparent;
+    font-size: 12px;
+    color: #a8a8a8;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+body.light .modal-site {
+    color: #616161;
+    background-color: rgba(145, 145, 145, 0.11);
+    border: 0.5px solid rgba(151, 151, 151, 0.2);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.modal-site:hover {
+    border-color: rgba(255, 102, 0, 0.5);
+    color: #ff6600;
+}
+
+body.light .modal-site:hover {
+    border-color: rgba(255, 102, 0, 0.5);
+    color: #ff6600;
 }
 
 .modal-line {
@@ -493,6 +538,11 @@ body.light .email:hover {
     padding: 22px;
 }
 
+body.light .modal-desafio {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0.5px solid rgba(151, 151, 151, 0.2);
+}
+
 .modal-proposta {
     display: flex;
     flex-direction: column;
@@ -500,6 +550,11 @@ body.light .email:hover {
     border: 0.5px solid #1e3030;
     border-radius: 10px;
     padding: 22px;
+}
+
+body.light .modal-proposta {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0.5px solid rgba(151, 151, 151, 0.2);
 }
 
 .modal-desafio-title {
@@ -541,6 +596,10 @@ body.light .email:hover {
     }
 }
 
+body.light .modal-icon-triangle {
+    background-color: #e16b6b3f;
+}
+
 .modal-icon-bulb {
     display: flex;
     align-items: center;
@@ -555,6 +614,10 @@ body.light .email:hover {
         width: 18px;
         height: 18px;
     }
+}
+
+body.light .modal-icon-bulb {
+    background-color: #b2f9c58a;
 }
 
 .hidden {
@@ -598,10 +661,13 @@ body.light .email:hover {
     max-width: 1000px;
     background: rgba(17, 17, 17);
     border-radius: 10px;
-    border: solid 0.5px #ffffff12;
     position: relative;
     max-height: 88vh;
     overflow: auto;
+}
+
+body.light .modal-box {
+    background: #f5f2ef;
 }
 
 .modal-dots {
@@ -612,6 +678,43 @@ body.light .email:hover {
     display: flex;
     gap: 6px;
 
+}
+
+.ver-mais {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 500;
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    transition: all 0.3s ease;
+    justify-content: flex-end;
+}
+
+.ver-mais:has(i.fa-code) {
+  color: #ff6600;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+}
+
+.card:hover .ver-mais:has(i.fa-code) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover .ver-mais {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ver-mais span {
+    font-size: 12px;
 }
 
 .modal-dot {
@@ -636,12 +739,18 @@ body.light .email:hover {
 
 }
 
-.modal-description {
+.modal-description,
+.modal-process-description,
+.modal-solution-description {
     color: #ffffffa4;
-    margin-top: 24px;
-    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.6rem;
+}
+
+body.light .modal-description,
+body.light .modal-process-description,
+body.light .modal-solution-description {
+    color: #616161;
 }
 
 .close-modal {
@@ -692,17 +801,23 @@ body.light .email:hover {
     justify-content: center;
     background-color: rgb(87 87 87 / 29%);
     font-size: 12px;
+    font-weight: 200;
     color: #a8a8a8;
     width: fit-content;
-    padding: 8px 12px;
+    padding: 6px 12px;
     border-radius: 22px;
-    margin-top: 36px;
 
     img {
         width: 14px;
         height: 14px;
         margin-right: 6px;
     }
+}
+
+body.light .modal-tag {
+    color: #616161;
+    background-color: rgba(145, 145, 145, 0.11);
+    border: 0.5px solid rgba(151, 151, 151, 0.2);
 }
 
 .modal-title {
@@ -782,6 +897,55 @@ body.light .email:hover {
     background-color: rgb(87 87 87 / 29%);
     font-size: 12px;
     color: #a8a8a8;
+}
+
+.modal-context-title {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+
+    .email {
+        padding: 12px 22px;
+        font-size: 14px;
+        margin-top: 0;
+        width: fit-content;
+    }
+}
+
+.modal-context-title::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 14px;
+    background: #e05a00;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+body.light .project-date {
+    color: #616161;
+    background-color: rgba(145, 145, 145, 0.11);
+    border: 0.5px solid rgba(151, 151, 151, 0.2);
+}
+
+.modal-desafio-description,
+.modal-proposta-description {
+    color: #ffffffa4;
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+
+body.light .modal-desafio-description,
+body.light .modal-proposta-description {
+    color: #616161;
 }
 
 .project-details {
@@ -999,10 +1163,11 @@ body.light .section {
     flex-direction: row;
     align-items: center;
     background-color: rgb(87 87 87 / 29%);
-    font-size: 12px;
+    font-size: 11px;
     color: #a8a8a8;
+    font-weight: 200;
     width: fit-content;
-    padding: 6px 12px;
+    padding: 4px 12px;
     border-radius: 22px;
 
     img {
@@ -1310,6 +1475,7 @@ body.light .div-infos p {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 1;
 }
 
 .card-container {
@@ -1324,6 +1490,8 @@ body.light .div-infos p {
     background-color: rgba(82, 82, 82, 0.1);
     border: 0.5px solid #ffffff12;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-container .card:hover {
@@ -1362,8 +1530,16 @@ body.light .div-infos p {
     transition: .3s ease;
 }
 
+body.light .carousel-dots span {
+    background: #a8a8a8;
+}
+
 .carousel-dots span.active {
     width: 32px;
+    background: #ff6600;
+}
+
+body.light .carousel-dots span.active {
     background: #ff6600;
 }
 
@@ -1393,6 +1569,16 @@ body.light .div-infos p {
     border: solid 0.2px #ff660070;
     opacity: 1;
 }
+
+body.light .bi-chevron-left:hover {
+    border: solid 0.5px #ff660070;
+    background-color: #ff66002d;
+}
+
+body.light .bi-chevron-right:hover {
+    border: solid 0.5px #ff660070;
+    background-color: #ff66002d;
+}   
 
 .box-icon {
     display: flex;

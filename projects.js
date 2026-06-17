@@ -14,6 +14,10 @@ let modalDate;
 let modalDescription;
 let modalTags;
 let modalDots;
+let modalDesafioDescription;
+let modalPropostaDescription;
+let modalSolutionDescription;
+let modalProcessDescription;
 
 let currentGallery = [];
 let currentImage = 0;
@@ -35,20 +39,30 @@ function createModal() {
 
       <div class="modal-content">
       
-        <div class="modal-header">
-          <h2 class="modal-title"></h2>
-          <p class="modal-date"></p>
-        </div>
-        
-        <div class="modal-tags-infos">
-          <div class="modal-infos" data-tooltip="Empresa">
-            <p class="modal-client"></p>
+        <div>
+          <div class="modal-header">
+            <h2 class="modal-title"></h2>
+            <p class="modal-date"></p>
+            <a href="" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="modal-site">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Acessar site
+            </a>
+          </div>
+          
+          <div class="modal-tags-infos">
+            <div class="modal-infos" data-tooltip="Empresa">
+              <p class="modal-client"></p>
+            </div>
           </div>
         </div>
 
-        <p class="modal-description"></p>
-
-        <span class="modal-line"></span>
+        <div>
+          <h3 class="modal-context-title">Contexto</h3>
+          <p class="modal-description"></p>
+        </div>
 
         <div class="modal-container-solucao">
           <div class="modal-desafio">
@@ -58,6 +72,7 @@ function createModal() {
               </div>
               <p class="modal-desafio-title">Desafio</p>
             </div>
+            <p class="modal-desafio-description"></p>
           </div>
           
           <div class="modal-proposta">
@@ -67,13 +82,38 @@ function createModal() {
               </div>
               <p class="modal-proposta-title">Solução</p>
             </div>
+            <p class="modal-proposta-description"></p>
           </div>
+        
         </div>
 
-        <div class="modal-tags" data-tooltip="Stack"></div>
-      </div>
+        <span class="modal-line"></span>
 
-      
+        <div>
+            <h3 class="modal-context-title">Processo</h3>
+            <p class="modal-process-description"></p>
+          </div>
+
+          <div>
+            <h3 class="modal-context-title">Solução</h3>
+            <p class="modal-solution-description"></p>
+          </div>
+        <span class="modal-line"></span>
+
+        <div class="modal-footer">
+          <div class="modal-tags" data-tooltip="Stack"></div>
+
+          <button class="email modal-button"
+            onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=diegolvr14@gmail.com','_blank')">
+                Vamos conversar
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M5 12h14"></path>
+                    <path d="M13 6l6 6-6 6"></path>
+                </svg>
+          </button>
+        </div>
+      </div>
     </div>
   `;
 
@@ -86,6 +126,11 @@ function createModal() {
   modalDescription = modal.querySelector(".modal-description");
   modalDots = modal.querySelector(".modal-dots");
   modalTags = modal.querySelector(".modal-tags");
+  modalDesafioDescription = modal.querySelector(".modal-desafio-description");
+  modalPropostaDescription = modal.querySelector(".modal-proposta-description");
+  modalSolutionDescription = modal.querySelector(".modal-solution-description");
+  modalProcessDescription = modal.querySelector(".modal-process-description");
+
 
   const closeBtn = modal.querySelector(".close-modal");
   const nextImg = modal.querySelector(".img-next");
@@ -128,11 +173,25 @@ function openModal(project) {
 
   currentImage = 0;
 
+  const siteLink = modal.querySelector('.modal-site');
+
+  if (project.siteUrl) {
+    siteLink.href = project.siteUrl;
+    siteLink.style.display = 'inline-flex';
+  } else {
+    siteLink.style.display = 'none';
+  }
+
   modalTitle.textContent = project.title;
   modalClient.textContent = project.client;
   modalDate.textContent = project.date;
   modalDescription.textContent =
     project.fullDescription || project.description;
+
+  modalDesafioDescription.textContent = project.desafio;
+  modalPropostaDescription.textContent = project.proposta;
+  modalSolutionDescription.textContent = project.solution;
+  modalProcessDescription.textContent = project.process;
 
   modalTags.innerHTML = project.tags
     .map(tag => `<span class="modal-tag">${tag}</span>`)
@@ -249,36 +308,50 @@ fetch("projects.json")
       const card = document.createElement("div");
       card.classList.add("card");
 
+      const verMais = project.inDevelopment
+        ? `<div class="ver-mais">
+              <span>Em desenvolvimento</span>
+              <i class="fa-solid fa-code"></i>
+            </div>`
+        : `<div class="ver-mais">
+              <span>Ver mais</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>`;
+
       card.innerHTML = `
-        <img src="${project.image}" alt="${project.title}">
-        <div class="card-conteudo">
-          <div class="project-infos">
-            <div class="div-title-client">
-              <div class="project-header">
-                <h3>${project.title}</h3>
-                <span class="project-date">${project.date}</span>
-              </div>
-              <div class="project-details">
-                <span class="project-client">${project.client}</span>
-              </div>
+      
+      <img src="${project.image}" alt="${project.title}">
+      
+      <div class="card-conteudo">
+        <div class="project-infos">
+          <div class="div-title-client">
+            <div class="project-header">
+              <h3>${project.title}</h3>
+              <span class="project-date">${project.date}</span>
+            </div>
+            <div class="project-details">
+              <span class="project-client">${project.client}</span>
             </div>
           </div>
-
-          <p>${project.description}</p>
-
-          <div class="div-infos">
-            ${project.tags
-          .map(tag => `<p class="p-infos">${tag}</p>`)
-          .join("")}
-          </div>
         </div>
-      `;
+
+        <p>${project.description}</p>
+
+        <div class="div-infos">
+          ${project.tags.map(tag => `<p class="p-infos">${tag}</p>`).join("")}
+        </div>
+
+        ${verMais}
+      </div>
+
+    `;
 
       card.style.cursor = "pointer";
 
-      // card.addEventListener("click", () => {
-      //   openModal(project);
-      // }); LEMBRAR DE TIRAR QUANDO TIVER FEITO TODA PARTE DO MODAL
+      card.addEventListener("click", () => {
+        if (project.inDevelopment) return;
+        openModal(project);
+      });
 
       projectsContainer.appendChild(card);
     });

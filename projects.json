@@ -1,75 +1,120 @@
 {
   "projects": [
     {
+      "title": "Origatto",
+      "client": "Projeto Pessoal",
+      "date": "2026",
+      "image": "/img/Origatto/origatto.jpg",
+      "description": "Papelaria criativa inspirada na união entre criatividade, personalização e o conceito animal friendly.",
+      "fullDescription": "A Origatto nasceu da ideia de criar uma papelaria criativa que fosse além da venda de produtos personalizados. O objetivo era desenvolver uma marca que transmitisse afeto, criatividade e personalidade, conectando o universo da papelaria ao amor pelos animais. O nome Origatto surge da união entre \"Origami\" e \"Gatto\" (gato em italiano), representando a combinação entre criatividade, papel e o conceito animal friendly.",
+      "gallery": [
+        "/img/Origatto/origatto.jpg"
+      ],
+      "process": "O processo de criação iniciou-se com a definição dos valores da marca e do seu posicionamento. Em seguida, foram exploradas diferentes possibilidades de símbolos que conectassem papelaria e animais de forma orgânica. A solução escolhida surgiu a partir da simplificação geométrica de um gato abraçando elementos gráficos relacionados ao universo da papelaria. Foram realizados estudos de composição, equilíbrio visual, redução de formas e aplicação em diferentes escalas para garantir legibilidade e consistência da marca.",
+      "solution": "A solução final consiste em um símbolo minimalista que integra um gato estilizado, folhas de papel e um lápis em uma única composição visual. O gato representa acolhimento, personalidade e a proposta animal friendly da marca, enquanto os papéis remetem à criatividade, personalização e produção gráfica. Um detalhe em formato de adesivo parcialmente descolado reforça o conceito de papelaria criativa e destaca um dos principais produtos do segmento. A paleta de cores combina tons de azul-marinho, azul claro e pêssego, transmitindo profissionalismo, leveza e proximidade. O resultado é uma identidade visual moderna, amigável e memorável, capaz de representar a essência da Origatto em diferentes pontos de contato da marca.",
+      "tags": [
+        "Designer"
+      ],
+      "desafio": "O principal desafio foi desenvolver uma marca que unisse dois universos distintos: a criatividade e funcionalidade da papelaria com a leveza e o carisma dos animais. Além disso, a identidade precisava fugir dos clichês comuns do segmento, como ícones genéricos de lápis, canetas ou folhas de papel isoladas, criando uma solução original, versátil e facilmente reconhecível em diferentes aplicações.",
+      "proposta": "O nome Origatto surge da combinação entre as palavras \"Origami\" e \"Gatto\" (gato em italiano), representando a união entre criatividade, papel e o conceito animal friendly. A inspiração visual veio da observação do comportamento dos gatos, conhecidos por sua curiosidade, personalidade e proximidade afetiva com as pessoas. Ao mesmo tempo, o universo do papel e das dobraduras serviu como referência para construir elementos visuais que remetessem à criação, personalização e expressão artística.",
+      "inDevelopment": true
+    },
+    {
       "title": "WeaveTrip",
       "client": "CEPEDI",
       "date": "2025",
-      "image": "/img/weavetrip.webp",
+      "image": "/img/WeaveTrip/weavetrip.webp",
       "description": "Plataforma de gestão de pacotes turísticos que centraliza reservas, usuários e ofertas de viagem.",
-      "fullDescription": "Plataforma de gestão de pacotes turísticos que centraliza reservas, usuários e ofertas de viagem.",
+      "fullDescription": "Neste projeto, desenvolvi a WeaveTrip, uma plataforma de gestão e comercialização de pacotes turísticos criada para conectar administradores, empresas parceiras e clientes finais em um único ecossistema. A solução foi pensada para permitir que empresas do setor de turismo cadastrassem e gerenciassem seus próprios pacotes de viagem, utilizando uma estrutura White Label para oferecer uma experiência personalizada aos seus clientes.",
       "gallery": [
-        "/img/weavetrip.webp",
-        "/img/weavetrip-1.webp",
-        "/img/weavetrip-2.webp"
+        "/img/WeaveTrip/weavetrip.webp",
+        "/img/WeaveTrip/login.jpg",
+        "/img/WeaveTrip/cadastro.jpg",
+        "/img/WeaveTrip/dashboard.jpg",
+        "/img/WeaveTrip/usuarios.jpg",
+        "/img/WeaveTrip/perfil.jpg",
+        "/img/WeaveTrip/agenciadash.jpg",
+        "/img/WeaveTrip/produtos.jpg",
+        "/img/WeaveTrip/cadastroprodutos.jpg",
+        "/img/WeaveTrip/home1.jpg",
+        "/img/WeaveTrip/home2.jpg",
+        "/img/WeaveTrip/home3.jpg",
+        "/img/WeaveTrip/home4.jpg",
+        "/img/WeaveTrip/cliente.jpg"
       ],
-      "tags": ["UI/UX", "Front-end"]
+      "process": "Para desenvolver a solução, foquei em estruturar uma plataforma capaz de atender diferentes perfis de usuários sem comprometer a experiência de navegação. A arquitetura foi organizada em três módulos principais: administrativo, responsável pela gestão geral da plataforma; empresas, voltado para o gerenciamento de pacotes e operações comerciais; e clientes, destinado à busca e contratação de viagens. Durante o desenvolvimento, priorizei fluxos intuitivos, organização das informações e uma estrutura escalável que permitisse o crescimento da plataforma e de seus parceiros.",
+      "solution": "O resultado foi uma plataforma completa para gestão e comercialização de pacotes turísticos, permitindo que empresas criem sua própria experiência de vendas através de White Labels personalizáveis. A solução centraliza o gerenciamento de usuários, reservas e pacotes de viagem em um único ambiente, simplificando processos operacionais e proporcionando uma experiência mais eficiente tanto para os gestores quanto para os clientes finais.",
+      "tags": [
+        "UI/UX",
+        "Front-end"
+      ],
+      "desafio": "Empresas do segmento turístico enfrentam dificuldades para estruturar canais próprios de venda e gerenciar seus produtos de forma eficiente, muitas vezes dependendo de plataformas limitadas ou de alto custo para personalização.",
+      "proposta": "Para solucionar esse problema, desenvolvi uma plataforma centralizada que permite às empresas gerenciar seus pacotes de viagem e operar sua própria loja digital através de uma estrutura White Label, oferecendo mais autonomia, escalabilidade e controle sobre suas operações."
     },
     {
       "title": "Clipo",
       "client": "Projeto de estudo",
       "date": "2025",
-      "image": "/img/clipo.webp",
+      "image": "/img/Clipo/clipo.webp",
       "description": "Aplicativo de vídeos com foco em praticidade, permitindo salvar, favoritar e assistir conteúdos posteriormente de forma intuitiva.",
-      "fullDescription": "Aplicativo de vídeos desenvolvido para proporcionar uma experiência prática e organizada, permitindo salvar conteúdos, assistir posteriormente e marcar vídeos favoritos de forma simples e intuitiva.",
+      "fullDescription": "Neste projeto, desenvolvi um aplicativo de vídeos com foco em proporcionar uma experiência simples, intuitiva e organizada para usuários que consomem conteúdos digitais com frequência. Com a crescente quantidade de vídeos disponíveis em diferentes plataformas, muitas pessoas enfrentam dificuldades para acompanhar conteúdos de interesse, salvar recomendações e retomar vídeos posteriormente. O objetivo do projeto foi criar uma solução que centralizasse essa experiência, permitindo que os usuários encontrassem, organizassem e acessassem facilmente seus conteúdos favoritos, reduzindo o esforço necessário para gerenciar o que desejam assistir.",
+      "process": "O desenvolvimento teve como ponto de partida a identificação de comportamentos comuns entre consumidores de vídeo, como salvar links em diferentes lugares, manter várias abas abertas ou esquecer conteúdos que pretendiam assistir posteriormente. A partir dessa análise, foram definidos os principais fluxos da aplicação, priorizando ações essenciais para uma experiência fluida: explorar conteúdos, assistir vídeos, favoritar itens e adicionar vídeos a uma lista de \"Assistir Mais Tarde\". Durante o processo de design, foram desenvolvidos wireframes e protótipos focados em simplicidade, clareza visual e facilidade de navegação, garantindo que os usuários pudessem realizar suas ações com o menor número possível de interações.",
+      "solution": "A solução resultou em um aplicativo intuitivo e organizado que permite aos usuários descobrir novos conteúdos, assistir vídeos de forma prática e criar uma biblioteca personalizada de interesses.",
       "gallery": [
-        "/img/clipo.webp",
-        "/img/clipopicture1.webp",
-        "/img/clipopicture2.webp",
-        "/img/clipopicture3.webp"
+        "/img/Clipo/clipo.webp",
+        "/img/Clipo/login.jpg",
+        "/img/Clipo/home.jpg",
+        "/img/Clipo/filtros.jpg",
+        "/img/Clipo/video.jpg",
+        "/img/Clipo/salvos.jpg",
+        "/img/Clipo/assistir.jpg"
       ],
-      "tags": ["UI/UX"]
+      "tags": [
+        "UI/UX"
+      ],
+      "desafio": "Usuários frequentemente têm dificuldade em organizar vídeos de interesse, perdendo conteúdos entre abas abertas, links salvos e diferentes plataformas.",
+      "proposta": "Criar uma plataforma intuitiva que permita descobrir, favoritar e salvar vídeos para assistir posteriormente, tornando o consumo de conteúdo mais organizado e eficiente."
     },
     {
       "title": "CheckAê",
-      "client": "CPDS",
+      "client": "CPDS - UESB",
       "date": "2024",
-      "image": "/img/checkae.webp",
+      "image": "/img/CheckAê/checkae.webp",
       "description": "Plataforma digital para registro e controle de presenças.",
-      "fullDescription": "Plataforma digital para registro e controle de presenças.",
+      "fullDescription": "Neste projeto, participei do desenvolvimento do CheckAê, uma plataforma digital voltada para o registro e controle de presenças. Minha principal contribuição esteve na criação da identidade visual da solução, desde a definição do nome até o desenvolvimento da logomarca. Em conjunto com a equipe, buscamos criar uma marca simples, memorável e próxima do público, utilizando uma expressão popular que transmitisse facilidade e informalidade. O resultado foi o nome CheckAê, acompanhado de uma identidade visual inspirada no conceito de check-in e confirmação de presença.",
       "gallery": [
-        "/img/checkae.webp",
-        "/img/checkae-1.webp",
-        "/img/checkae-2.webp"
+        "/img/CheckAê/checkae.webp"
       ],
-      "tags": ["Design", "Front-end"]
-    },
-    {
-      "title": "Central Caverna",
-      "client": "Grupo Sideral",
-      "date": "2024",
-      "image": "/img/centralcaverna.webp",
-      "description": "SaaS de produtividade, foco e organização pessoal.",
-      "fullDescription": "SaaS de produtividade, foco e organização pessoal.",
-      "gallery": [
-        "/img/centralcaverna.webp",
-        "/img/centralcaverna-1.webp",
-        "/img/centralcaverna-2.webp"
+      "siteUrl": "https://check-ae.cpds.uesb.br/",
+      "process": "Para desenvolver a identidade da plataforma, foquei em criar uma marca que fosse facilmente reconhecida e que representasse a principal funcionalidade do sistema. O processo começou com estudos de naming, buscando termos familiares ao cotidiano dos usuários. A partir disso, surgiu o nome CheckAê, combinando o conceito de verificação com uma expressão popular brasileira. Em seguida, desenvolvi a logomarca utilizando elementos visuais que remetem à confirmação e validação, como o símbolo de check, reforçando visualmente o propósito da plataforma. Além da etapa de design, também participei do desenvolvimento front-end da aplicação.",
+      "solution": "O resultado foi uma plataforma com identidade visual forte e de fácil reconhecimento, capaz de comunicar rapidamente sua finalidade. A combinação entre um nome acessível e uma logomarca inspirada no conceito de check-in contribuiu para uma experiência mais intuitiva e alinhada aos objetivos do produto.",
+      "tags": [
+        "Design",
+        "Front-end"
       ],
-      "tags": ["UI/UX", "Front-end"]
+      "desafio": "Criar uma identidade visual que representasse de forma clara o registro de presenças, além de definir um nome simples, memorável e próximo da linguagem utilizada pelos usuários.",
+      "proposta": "Desenvolver uma marca inspirada no conceito de confirmação e check-in, utilizando uma identidade visual intuitiva e um nome acessível que facilitasse o reconhecimento e a conexão com o público."
     },
     {
       "title": "Espaços Dinamizadores",
       "client": "CPDS",
       "date": "2023",
-      "image": "/img/espacosdinamizadores.webp",
+      "image": "/img/EspaçosDinamizadores/espacosdinamizadores.webp",
       "description": "Sistema para gestão de atividades em ambientes de inovação.",
-      "fullDescription": "Sistema para gestão de atividades em ambientes de inovação.",
       "gallery": [
-        "/img/espacosdinamizadores.webp",
-        "/img/espacosdinamizadores-1.webp",
-        "/img/espacosdinamizadores-2.webp"
+        "/img/EspaçosDinamizadores/espacosdinamizadores.webp",
+        "/img/EspaçosDinamizadores/acao.jpg"
       ],
-      "tags": ["UI/UX", "Front-end"]
+      "tags": [
+        "UI/UX",
+        "Front-end"
+      ],
+      "siteUrl": "http://espacodinamizador.secti.ba.gov.br/",
+      "fullDescription": "Neste projeto, participei do desenvolvimento do Espaços Dinamizadores, uma plataforma voltada para a gestão de atividades, projetos e ações realizadas em ambientes de inovação. Minha atuação esteve concentrada principalmente no desenvolvimento front-end, realizando correções, melhorias e ajustes na interface do sistema. Além disso, contribuí na evolução da experiência do usuário através da reformulação de telas estratégicas, buscando tornar a visualização das informações mais clara, organizada e intuitiva.",
+      "process": "Para aprimorar a experiência dos usuários, foquei na análise de uma das principais telas do sistema, responsável pela visualização de ações e atividades cadastradas. O processo envolveu a reorganização das informações, definição de uma hierarquia visual mais eficiente e melhorias na apresentação dos dados para facilitar a compreensão do conteúdo. Paralelamente, realizei correções e ajustes no front-end, garantindo maior consistência visual e melhor usabilidade em diferentes fluxos da plataforma.",
+      "solution": "O resultado foi uma interface mais moderna, organizada e funcional, permitindo que os usuários visualizassem informações relevantes de forma mais rápida e intuitiva. As melhorias implementadas contribuíram para uma navegação mais eficiente e para uma experiência mais agradável dentro da plataforma.",
+      "desafio": "A tela de visualização de ações apresentava oportunidades de melhoria na organização e exibição das informações, dificultando a leitura e o acompanhamento das atividades pelos usuários.",
+      "proposta": "Reestruturar a interface da tela, organizando melhor os conteúdos e criando uma experiência mais intuitiva, facilitando a visualização e o gerenciamento das ações cadastradas."
     }
   ]
 }
