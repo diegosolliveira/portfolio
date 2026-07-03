@@ -697,10 +697,10 @@ body.light .modal-box {
 }
 
 .ver-mais:has(i.fa-code) {
-  color: #ff6600;
-  opacity: 0;
-  cursor: default;
-  pointer-events: none;
+    color: #ff6600;
+    opacity: 0;
+    cursor: default;
+    pointer-events: none;
 }
 
 .card:hover .ver-mais:has(i.fa-code) {
@@ -1578,7 +1578,7 @@ body.light .bi-chevron-left:hover {
 body.light .bi-chevron-right:hover {
     border: solid 0.5px #ff660070;
     background-color: #ff66002d;
-}   
+}
 
 .box-icon {
     display: flex;
@@ -1688,6 +1688,11 @@ body.light footer {
     .what-icando .whats-important span {
         margin-top: 22px;
         font-size: 11px;
+    }
+
+    .modal-container-solucao {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .card-principal.contact {
