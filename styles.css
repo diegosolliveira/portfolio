@@ -1690,6 +1690,37 @@ body.light footer {
         font-size: 11px;
     }
 
+    .close-modal {
+        height: 32px;
+        width: 32px;
+        font-size: 16px;
+    }
+
+    .card-principal.projects .card p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .card {
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .project-date {
+        padding: 2px 10px;
+        font-size: 10px;
+    }
+
+    .card-principal.projects .card .div-infos p {
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+
+    .card-conteudo {
+        padding: 22px;
+    }
+
     .modal-content {
         padding: 0px 16px 16px 16px;
         gap: 16px;
@@ -1987,7 +2018,7 @@ body.light footer {
     }
 
     .card-container .card {
-        flex: 0 0 85%;
+        flex: 0 0 90%;
     }
 
     .carousel-dots {
