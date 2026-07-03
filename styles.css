@@ -18,6 +18,18 @@ body.light {
     background-size: 60px 60px;
 }
 
+.div-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px; 
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
 canvas {
     position: fixed;
     top: 0;
