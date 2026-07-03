@@ -1690,6 +1690,56 @@ body.light footer {
         font-size: 11px;
     }
 
+    .modal-content {
+        padding: 0px 16px 16px 16px;
+        gap: 16px;
+    }
+
+    .modal-site,
+    .modal-date,
+    .modal-tag {
+        font-size: 10px;
+    }
+
+    .modal-footer {
+        .email {
+            font-size: 12px;
+            padding: 8px 16px;
+        }
+    }
+
+    .modal-process-description,
+    .modal-solution-description,
+    .modal-description {
+        font-size: 12px;
+        line-height: 1.3rem;
+    }
+
+    .modal-desafio-description,
+    .modal-proposta-description {
+        font-size: 12px;
+        line-height: 1.3rem;
+    }
+
+    .modal-title {
+        font-size: 26px;
+    }
+
+    .modal-infos span {
+        font-size: 12px;
+    }
+
+    .img-prev,
+    .img-next {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .project-modal {
+        padding: 6px;
+    }
+
     .modal-container-solucao {
         display: grid;
         grid-template-columns: 1fr;
