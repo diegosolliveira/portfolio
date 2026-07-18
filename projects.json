@@ -25,7 +25,7 @@
       "process": "O projeto teve início com uma reunião de alinhamento com o cliente, na qual foram discutidos a história da AGILIMP, seus objetivos, o motivo do redesign e as expectativas para a nova identidade visual. A partir dessas informações, foi desenvolvido o redesign da marca e suas aplicações, garantindo uma solução alinhada aos valores e ao posicionamento da empresa.",
       "solution": "Foi desenvolvido um redesign da marca, acompanhado de aplicações em materiais como embalagens, uniforme, cartão de visita, crachá e caneca, garantindo uma identidade visual consistente e fortalecendo o reconhecimento da empresa.",
       "tags": [
-        "Designer"
+        "Designer Gráfico"
       ],
       "desafio": "Modernizar a identidade visual da AGILIMP, criando uma logo mais profissional, memorável e alinhada ao segmento de produtos de limpeza.",
       "proposta": "Foi desenvolvido um redesign da marca, acompanhado de aplicações em materiais como embalagens, uniforme, cartão de visita, crachá e caneca, garantindo uma identidade visual consistente e fortalecendo o reconhecimento da empresa.",
@@ -44,7 +44,7 @@
       "process": "O processo de criação iniciou-se com a definição dos valores da marca e do seu posicionamento. Em seguida, foram exploradas diferentes possibilidades de símbolos que conectassem papelaria e animais de forma orgânica. A solução escolhida surgiu a partir da simplificação geométrica de um gato abraçando elementos gráficos relacionados ao universo da papelaria. Foram realizados estudos de composição, equilíbrio visual, redução de formas e aplicação em diferentes escalas para garantir legibilidade e consistência da marca.",
       "solution": "A solução final consiste em um símbolo minimalista que integra um gato estilizado, folhas de papel e um lápis em uma única composição visual. O gato representa acolhimento, personalidade e a proposta animal friendly da marca, enquanto os papéis remetem à criatividade, personalização e produção gráfica. Um detalhe em formato de adesivo parcialmente descolado reforça o conceito de papelaria criativa e destaca um dos principais produtos do segmento. A paleta de cores combina tons de azul-marinho, azul claro e pêssego, transmitindo profissionalismo, leveza e proximidade. O resultado é uma identidade visual moderna, amigável e memorável, capaz de representar a essência da Origatto em diferentes pontos de contato da marca.",
       "tags": [
-        "Designer"
+        "Designer Gráfico"
       ],
       "desafio": "O principal desafio foi desenvolver uma marca que unisse dois universos distintos: a criatividade e funcionalidade da papelaria com a leveza e o carisma dos animais. Além disso, a identidade precisava fugir dos clichês comuns do segmento, como ícones genéricos de lápis, canetas ou folhas de papel isoladas, criando uma solução original, versátil e facilmente reconhecível em diferentes aplicações.",
       "proposta": "O nome Origatto surge da combinação entre as palavras \"Origami\" e \"Gatto\" (gato em italiano), representando a união entre criatividade, papel e o conceito animal friendly. A inspiração visual veio da observação do comportamento dos gatos, conhecidos por sua curiosidade, personalidade e proximidade afetiva com as pessoas. Ao mesmo tempo, o universo do papel e das dobraduras serviu como referência para construir elementos visuais que remetessem à criação, personalização e expressão artística.",
@@ -76,8 +76,9 @@
       "process": "Para desenvolver a solução, foquei em estruturar uma plataforma capaz de atender diferentes perfis de usuários sem comprometer a experiência de navegação. A arquitetura foi organizada em três módulos principais: administrativo, responsável pela gestão geral da plataforma; empresas, voltado para o gerenciamento de pacotes e operações comerciais; e clientes, destinado à busca e contratação de viagens. Durante o desenvolvimento, priorizei fluxos intuitivos, organização das informações e uma estrutura escalável que permitisse o crescimento da plataforma e de seus parceiros.",
       "solution": "O resultado foi uma plataforma completa para gestão e comercialização de pacotes turísticos, permitindo que empresas criem sua própria experiência de vendas através de White Labels personalizáveis. A solução centraliza o gerenciamento de usuários, reservas e pacotes de viagem em um único ambiente, simplificando processos operacionais e proporcionando uma experiência mais eficiente tanto para os gestores quanto para os clientes finais.",
       "tags": [
-        "UI/UX",
-        "Front-end"
+        "UI/UX Design",
+        "Front-end",
+        "Designer Gráfico"
       ],
       "desafio": "Empresas do segmento turístico enfrentam dificuldades para estruturar canais próprios de venda e gerenciar seus produtos de forma eficiente, muitas vezes dependendo de plataformas limitadas ou de alto custo para personalização.",
       "proposta": "Para solucionar esse problema, desenvolvi uma plataforma centralizada que permite às empresas gerenciar seus pacotes de viagem e operar sua própria loja digital através de uma estrutura White Label, oferecendo mais autonomia, escalabilidade e controle sobre suas operações."
@@ -101,7 +102,8 @@
         "/img/Clipo/assistir.jpg"
       ],
       "tags": [
-        "UI/UX"
+        "UI/UX Designer",
+        "Designer Gráfico"
       ],
       "desafio": "Usuários frequentemente têm dificuldade em organizar vídeos de interesse, perdendo conteúdos entre abas abertas, links salvos e diferentes plataformas.",
       "proposta": "Criar uma plataforma intuitiva que permita descobrir, favoritar e salvar vídeos para assistir posteriormente, tornando o consumo de conteúdo mais organizado e eficiente."
@@ -120,7 +122,7 @@
       "process": "Para desenvolver a identidade da plataforma, foquei em criar uma marca que fosse facilmente reconhecida e que representasse a principal funcionalidade do sistema. O processo começou com estudos de naming, buscando termos familiares ao cotidiano dos usuários. A partir disso, surgiu o nome CheckAê, combinando o conceito de verificação com uma expressão popular brasileira. Em seguida, desenvolvi a logomarca utilizando elementos visuais que remetem à confirmação e validação, como o símbolo de check, reforçando visualmente o propósito da plataforma. Além da etapa de design, também participei do desenvolvimento front-end da aplicação.",
       "solution": "O resultado foi uma plataforma com identidade visual forte e de fácil reconhecimento, capaz de comunicar rapidamente sua finalidade. A combinação entre um nome acessível e uma logomarca inspirada no conceito de check-in contribuiu para uma experiência mais intuitiva e alinhada aos objetivos do produto.",
       "tags": [
-        "Design",
+        "Designer Gráfico",
         "Front-end"
       ],
       "desafio": "Criar uma identidade visual que representasse de forma clara o registro de presenças, além de definir um nome simples, memorável e próximo da linguagem utilizada pelos usuários.",
@@ -137,7 +139,7 @@
         "/img/EspaçosDinamizadores/acao.jpg"
       ],
       "tags": [
-        "UI/UX",
+        "UI/UX Designer",
         "Front-end"
       ],
       "siteUrl": "http://espacodinamizador.secti.ba.gov.br/",
