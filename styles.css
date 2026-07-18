@@ -30,6 +30,18 @@ body.light {
     }
 }
 
+.div-logo .logowhite {
+    display: none;
+}
+
+body.light .div-logo .logowhite {
+    display: block;
+}
+
+body.light .div-logo .logo {
+    display: none;
+}
+
 canvas {
     position: fixed;
     top: 0;
