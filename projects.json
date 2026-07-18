@@ -59,19 +59,19 @@
       "fullDescription": "Neste projeto, desenvolvi a WeaveTrip, uma plataforma de gestão e comercialização de pacotes turísticos criada para conectar administradores, empresas parceiras e clientes finais em um único ecossistema. A solução foi pensada para permitir que empresas do setor de turismo cadastrassem e gerenciassem seus próprios pacotes de viagem, utilizando uma estrutura White Label para oferecer uma experiência personalizada aos seus clientes.",
       "gallery": [
         "/img/WeaveTrip/weavetrip.webp",
-        "/img/WeaveTrip/login.jpg",
-        "/img/WeaveTrip/cadastro.jpg",
-        "/img/WeaveTrip/dashboard.jpg",
-        "/img/WeaveTrip/usuarios.jpg",
-        "/img/WeaveTrip/perfil.jpg",
-        "/img/WeaveTrip/agenciadash.jpg",
-        "/img/WeaveTrip/produtos.jpg",
-        "/img/WeaveTrip/cadastroprodutos.jpg",
-        "/img/WeaveTrip/home1.jpg",
-        "/img/WeaveTrip/home2.jpg",
-        "/img/WeaveTrip/home3.jpg",
-        "/img/WeaveTrip/home4.jpg",
-        "/img/WeaveTrip/cliente.jpg"
+        "/img/WeaveTrip/login.webp",
+        "/img/WeaveTrip/cadastro.webp",
+        "/img/WeaveTrip/dashboard.webp",
+        "/img/WeaveTrip/usuarios.webp",
+        "/img/WeaveTrip/perfil.webp",
+        "/img/WeaveTrip/agenciadash.webp",
+        "/img/WeaveTrip/produtos.webp",
+        "/img/WeaveTrip/cadastroprodutos.webp",
+        "/img/WeaveTrip/home1.webp",
+        "/img/WeaveTrip/home2.webp",
+        "/img/WeaveTrip/home3.webp",
+        "/img/WeaveTrip/home4.webp",
+        "/img/WeaveTrip/cliente.webp"
       ],
       "process": "Para desenvolver a solução, foquei em estruturar uma plataforma capaz de atender diferentes perfis de usuários sem comprometer a experiência de navegação. A arquitetura foi organizada em três módulos principais: administrativo, responsável pela gestão geral da plataforma; empresas, voltado para o gerenciamento de pacotes e operações comerciais; e clientes, destinado à busca e contratação de viagens. Durante o desenvolvimento, priorizei fluxos intuitivos, organização das informações e uma estrutura escalável que permitisse o crescimento da plataforma e de seus parceiros.",
       "solution": "O resultado foi uma plataforma completa para gestão e comercialização de pacotes turísticos, permitindo que empresas criem sua própria experiência de vendas através de White Labels personalizáveis. A solução centraliza o gerenciamento de usuários, reservas e pacotes de viagem em um único ambiente, simplificando processos operacionais e proporcionando uma experiência mais eficiente tanto para os gestores quanto para os clientes finais.",
@@ -94,12 +94,12 @@
       "solution": "A solução resultou em um aplicativo intuitivo e organizado que permite aos usuários descobrir novos conteúdos, assistir vídeos de forma prática e criar uma biblioteca personalizada de interesses.",
       "gallery": [
         "/img/Clipo/clipo.webp",
-        "/img/Clipo/login.jpg",
-        "/img/Clipo/home.jpg",
-        "/img/Clipo/filtros.jpg",
-        "/img/Clipo/video.jpg",
-        "/img/Clipo/salvos.jpg",
-        "/img/Clipo/assistir.jpg"
+        "/img/Clipo/login.webp",
+        "/img/Clipo/home.webp",
+        "/img/Clipo/filtros.webp",
+        "/img/Clipo/video.webp",
+        "/img/Clipo/salvos.webp",
+        "/img/Clipo/assistir.webp"
       ],
       "tags": [
         "UI/UX Designer",
@@ -136,7 +136,7 @@
       "description": "Sistema para gestão de atividades em ambientes de inovação.",
       "gallery": [
         "/img/EspaçosDinamizadores/espacosdinamizadores.webp",
-        "/img/EspaçosDinamizadores/acao.jpg"
+        "/img/EspaçosDinamizadores/acao.webp"
       ],
       "tags": [
         "UI/UX Designer",
