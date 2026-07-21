@@ -319,34 +319,37 @@ fetch("projects.json")
             </div>`;
 
       card.innerHTML = `
-      
-      <img src="${project.image}" alt="${project.title}">
-      
-      <div class="card-conteudo">
-        <div class="project-infos">
-          <div class="div-title-client">
-            <div class="project-header">
-              <h3>${project.title}</h3>
-              <span class="project-date">${project.date}</span>
+        <div class="project-card">
+
+            <img class="project-bg" src="${project.image}" alt="${project.title}">
+
+            <div class="overlay"></div>
+
+            
+
+            <div class="project-content">
+               
+                <div class="project-tags">
+                  <h3>${project.title}</h3>
+                  <span class="tag-date">${project.date}</span>
+                </div>
+                <span class="project-category">${project.client}</span>
+
+                <p>${project.description}</p>
+
+                 <div class="project-tags">
+                  ${project.tags.map(tag => `<span>${tag}</span>`).join("")}
+                 </div>
+
+                <button class="btn-project">
+                    Explorar
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+
             </div>
-            <div class="project-details">
-              <span class="project-client">${project.client}</span>
-            </div>
-          </div>
+
         </div>
-
-        <p>${project.description}</p>
-
-        <div class="div-infos">
-          ${project.tags.map(tag => `<p class="p-infos">${tag}</p>`).join("")}
-        </div>
-
-        ${verMais}
-      </div>
-
-    `;
-
-      card.style.cursor = "pointer";
+        `;
 
       card.addEventListener("click", () => {
         if (project.inDevelopment) return;

@@ -18,11 +18,153 @@ body.light {
     background-size: 60px 60px;
 }
 
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+}
+
+.project-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card:hover .project-bg {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .25) 45%, rgba(0, 0, 0, .7) 82%, rgba(0, 0, 0, .88));
+    transition: background 0.4s ease;
+}
+
+.project-card:hover .overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .35) 45%, rgba(0, 0, 0, .8) 82%, rgba(0, 0, 0, .92));
+}
+
+.project-content {
+    position: absolute;
+    left: 43.5%;
+    bottom: 32px;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.project-category {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: #ff8533;
+    margin-top: -8px;
+}
+
+.project-content h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.project-content p {
+    font-size: 12px;
+    line-height: 1.4 !important;
+    opacity: .95;
+    text-align: left !important;
+    color: #ffffff !important;
+    max-width: 420px;
+    margin-bottom: 0px !important;
+}
+
+.project-tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.project-tags span {
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(4px);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    color: white;
+
+    font-size: 11px;
+    letter-spacing: 0.75px;
+}
+
+.btn-project {
+    padding: 12px 26px;
+    margin-top: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+
+    background: #ffff;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-project svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.25s ease;
+}
+
+.btn-project:hover {
+    color: #000000;
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
+
+.btn-project:hover svg {
+    transform: translateX(2px);
+}
+
 .div-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12px; 
+    gap: 12px;
 
     img {
         width: 24px;
@@ -57,17 +199,22 @@ canvas {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
-    width: 86px;
-    height: 42px;
+    padding: 10px 12px;
     border-radius: 10px;
     border: 0.5px solid rgba(255, 255, 255, 0.1);
     color: #ffffff;
     font-family: 'Zalando Sans Expanded', sans-serif;
     gap: 10px;
     cursor: pointer;
+    font-size: 12px;
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
 }
 
-body.light .button-cv {
+body.light .div-nav .button-cv {
     border: 0.5px solid rgba(0, 0, 0, 0.12);
     color: #303030;
 }
@@ -78,16 +225,11 @@ body.light .button-cv {
     color: #ff6600;
 }
 
-body.light .button-cv:hover {
-    border: 0.5px solid #ff660044;
-    background-color: #ff66001a;
-    color: #ff6600;
-}
-
 .div-nav {
     display: flex;
     align-items: center;
     gap: 48px;
+    font-size: 14px;
 }
 
 .div-nav-buttons {
@@ -101,8 +243,7 @@ body.light .button-cv:hover {
     align-items: center;
     justify-content: center;
 
-    width: 42px;
-    height: 42px;
+    padding: 8px 10px;
 
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -111,6 +252,73 @@ body.light .button-cv:hover {
     color: #ffffff;
 
     cursor: pointer;
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.div-chips {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.card-chips {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 12px 12px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 0.5px solid rgba(255, 255, 255, 0.02);
+    border-radius: 7px;
+
+    h2 {
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 12px !important;
+        color: #ffffffa4 !important;
+        margin-top: 0px !important;
+        margin-bottom: 6px !important;
+    }
+}
+
+body.light .card-chips {
+    background-color: rgba(158, 158, 158, 0.15);
+    border: 0.5px solid rgba(7, 7, 7, 0.1);
+
+    p {
+        color: #616161 !important;
+    }
+}
+
+body.light .card-principal.aboutme .div-infos {
+    .subtitle-info {
+        color: #1111118e;
+    }
+}
+
+body.light .card-principal.aboutme .div-infos {
+    .skils {
+        p {
+            background-color: #ff66001a;
+            color: #ff6600d2;
+            width: fit-content;
+            padding: 0px 12px;
+            border-radius: 22px;
+            border: 0.5px solid #e05a005b;
+            margin: 0px;
+        }
+    }
 }
 
 body.light #themeToggle {
@@ -150,14 +358,27 @@ body.light .card-container .card {
 }
 
 body.light .home {
-    background-color: #ffffff0c;
+    background-color: #9c92920c;
+}
+
+body.light .home .card-home .disponivel {
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgba(151, 151, 151, 0.44);
+
+    span {
+        color: #616161;
+    }
+
+    .ball {
+        background-color: #4caf7d;
+    }
 }
 
 .home .card-home {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 70%;
+    width: 60%;
     text-align: center;
     align-items: center;
 
@@ -165,6 +386,109 @@ body.light .home {
         font-size: 62px;
         font-weight: 300;
         color: #ffffff;
+        margin-bottom: 12px;
+    }
+
+    .disponivel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 8px;
+        padding: 4px 12px;
+        border-radius: 14px;
+        background: #1a1a1a;
+        border: 0.5px solid #2e2e2e;
+        z-index: 4;
+
+        span {
+            font-size: 12px;
+            color: #aaa;
+            font-weight: 500;
+            font-family: 'Zalando Sans Expanded', sans-serif;
+        }
+
+        .ball {
+            display: flex;
+            font-size: 0px;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: #4caf7d;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .button-see {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 14px 16px;
+        border-radius: 10px;
+        border: 0.5px solid rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        font-family: 'Zalando Sans Expanded', sans-serif;
+        cursor: pointer;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #ff6600;
+        gap: 8px;
+        border: none !important;
+        transition: transform 0.3s ease;
+
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    .button-see:hover {
+        transform: translateY(-3px) scale(1.02);
+    }
+
+    .button-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(6px);
+        padding: 14px 22px;
+        border-radius: 10px;
+        border: 0.5px solid rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        font-family: 'Zalando Sans Expanded', sans-serif;
+        cursor: pointer;
+        font-size: 14px;
+        color: #ffffff;
+        transition: transform 0.3s ease;
+
+    }
+
+    .button-contact:hover {
+        background-color: rgba(255, 255, 255, 0.07);
+        border: 0.5px solid rgba(255, 255, 255, 0.2);
+        transform: translateY(-3px) scale(1.02);
+    }
+}
+
+body.light .home .card-home {
+    .button-contact {
+        background: rgba(46, 46, 46, 0.05);
+        border: 0.5px solid rgba(31, 31, 31, 0.2);
+        color: #616161;
+
+    }
+
+    .button-contact:hover {
+        background-color: rgba(46, 46, 46, 0.07);
+        border: 0.5px solid rgba(31, 31, 31, 0.25);
     }
 }
 
@@ -241,10 +565,11 @@ body.light .highlight2 {
 }
 
 .highlight3 {
-    font-size: 24px;
+    font-size: 22px;
     color: #ffffffa4;
     margin-bottom: 24px;
     width: 80%;
+    font-weight: 200;
 }
 
 .highlight4 {
@@ -682,7 +1007,7 @@ body.light .modal-icon-bulb {
 
 .modal-box {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     background: rgba(17, 17, 17);
     border-radius: 10px;
     position: relative;
@@ -1000,9 +1325,9 @@ body.light .modal-proposta-description {
 
     .button-cv {
         width: 196px;
-        color: #ff6600;
-        border: 0.5px solid #ff660044;
-        background-color: #ff66001a;
+        color: #ffffff;
+        border: 0.5px solid #ff6600;
+        background-color: #ff6600;
         margin-top: 24px;
 
         transition: transform 0.3s ease;
@@ -1011,12 +1336,6 @@ body.light .modal-proposta-description {
     .button-cv:hover {
         transform: translateY(-3px) scale(1.02);
     }
-}
-
-body.light .div-stacks .button-cv {
-    border: 0.5px solid #ff660044;
-    background-color: #ff66001a;
-    color: #ff6600;
 }
 
 .stacks {
@@ -1169,19 +1488,6 @@ body.light .section {
     border-top: 0.5px solid rgba(151, 151, 151, 0.2);
 }
 
-.card-principal.projects p {
-    font-size: 22px;
-    color: #ffffffa4;
-    line-height: 36px;
-    margin-top: 0px;
-}
-
-.card-principal.projects .card p {
-    font-size: 14px;
-    color: #ffffffa4;
-    line-height: 22px;
-}
-
 .card-principal.projects .card .div-infos p {
     display: flex;
     flex-direction: row;
@@ -1223,7 +1529,8 @@ body.light .card-principal.projects p {
     display: flex;
     flex-direction: column;
     gap: 38px;
-    max-width: 1400px;
+    max-width: 1500px;
+    width: 100%;
     padding: 92px;
     border-radius: 8px;
     gap: 16px;
@@ -1233,7 +1540,7 @@ body.light .card-principal.projects p {
 }
 
 .text-title {
-    font-size: 52px;
+    font-size: 46px;
     margin: 0;
     font-weight: 800;
 }
@@ -1255,6 +1562,7 @@ body.light .card-principal.projects p {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 100%;
 }
 
 .card-principal.wcid .infos-aboutme {
@@ -1329,11 +1637,45 @@ body.light .what-icando {
 
 .card-principal.aboutme .div-infos {
     display: flex;
-    flex-direction: row;
-    gap: 12px;
-    width: fit-content;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    margin-bottom: 14px;
+    margin-top: 14px;
+
+    .subtitle-info {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #ffffff8a;
+        letter-spacing: 1.1px;
+        font-weight: 200;
+        margin-bottom: 8px;
+    }
+
+    .skils {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap !important;
+        gap: 8px;
+
+        p {
+            background-color: #ff66001a;
+            color: #ff6600d2;
+            padding: 0px 12px;
+            border-radius: 22px;
+            border: 0.5px solid #e05a005b;
+            margin: 0px;
+        }
+    }
+
+    .ferramentas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 }
+
 
 .card-principal.aboutme .div-infos p {
     display: flex;
@@ -1464,7 +1806,7 @@ body.light .card-principal.aboutme .div-infos p {
 .card {
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
+    max-width: 1500px;
     border-radius: 10px;
     gap: 8px;
 
@@ -1474,7 +1816,7 @@ body.light .card-principal.aboutme .div-infos p {
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 24px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -1509,29 +1851,13 @@ body.light .div-infos p {
 }
 
 .card-container .card {
-    flex: 0 0 calc((100% - 5px) / 2.5);
-    cursor: pointer;
-    background-color: rgba(82, 82, 82, 0.1);
-    border: 0.5px solid #ffffff12;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 calc((100% - 5px) / 1.2);
     display: flex;
     flex-direction: column;
 }
 
-.card-container .card:hover {
-    transform: translateY(-6px) scale(1.02);
-}
-
-.card-container .card img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
 .carousel-wrapper {
     display: flex;
-    /* background-color: rgba(10 10 10); */
     align-items: center;
     gap: 16px;
     padding: 4px 2px;
@@ -1968,7 +2294,7 @@ body.light footer {
         align-items: center;
         justify-content: center;
         background-color: #0000000c;
-        height: 48vh;
+        height: 60vh;
     }
 
     .home .card-home {
@@ -2042,7 +2368,7 @@ body.light footer {
     }
 
     .card-container .card {
-        flex: 0 0 90%;
+        flex: 0 0 125%;
     }
 
     .carousel-dots {
@@ -2065,5 +2391,80 @@ body.light footer {
 
     .card-principal.contact .sociais a {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        height: 596px;
+    }
+
+    .project-content {
+        left: 50%;
+        width: 90%;
+        bottom: 18px;
+    }
+
+    .card-principal.aboutme p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .btn-project {
+        width: 100%;
+    }
+
+    .project-tags {
+        width: 100%;
+    }
+
+    .project-tags span {
+        font-size: 10px;
+    }
+
+    .text-title {
+        font-size: 22px;
+    }
+
+    .home .card-home .button-see {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .home .card-home .button-contact {
+        font-size: 12px;
+        padding: 12px 12px;
+    }
+
+    .card-chips {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 12px 12px;
+        background-color: rgba(255, 255, 255, 0.03);
+        border: 0.5px solid rgba(255, 255, 255, 0.02);
+        border-radius: 7px;
+
+        h2 {
+            font-size: 18px;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 8px !important;
+            line-height: 18px !important;
+        }
+
+    }
+
+    .card-principal.aboutme .div-infos .skils{
+        flex-wrap: nowrap;
+    }
+
+    .email {
+        font-size: 14px;
+        padding: 14px 22px;
     }
 }

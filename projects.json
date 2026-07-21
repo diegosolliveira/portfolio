@@ -2,9 +2,9 @@
   "projects": [
     {
       "title": "AGILIMP",
-      "client": "AGILIMP Produtos de Limpeza",
+      "client": "Produtos de Limpeza",
       "date": "2026",
-      "image": "/img/AgiLimp/agilimp.webp",
+      "image": "/img/AgiLimp/mockup.webp",
       "siteUrl": "https://www.behance.net/gallery/252153821/Manual-da-Marca-AgiLimp",
       "description": "AGILIMP é uma empresa especializada em produtos de limpeza, oferecendo soluções práticas, eficientes e de qualidade para higienização de diversos ambientes.",
       "fullDescription": "A proposta buscou desenvolver uma identidade visual que transmitisse limpeza, confiança, qualidade e modernidade. Para isso, foram utilizadas tonalidades de azul, associadas à higiene e credibilidade, complementadas por detalhes em azul-claro que remetem à água, brilho e sensação de limpeza. Os elementos gráficos, como o traço fluido, as bolhas e o brilho, reforçam visualmente o segmento da empresa sem comprometer a simplicidade da marca, tornando-a mais versátil para aplicações impressas e digitais. O projeto foi finalizado com o desenvolvimento de materiais institucionais, garantindo unidade visual e fortalecendo o reconhecimento da marca em todos os seus pontos de contato.",
@@ -25,36 +25,17 @@
       "process": "O projeto teve início com uma reunião de alinhamento com o cliente, na qual foram discutidos a história da AGILIMP, seus objetivos, o motivo do redesign e as expectativas para a nova identidade visual. A partir dessas informações, foi desenvolvido o redesign da marca e suas aplicações, garantindo uma solução alinhada aos valores e ao posicionamento da empresa.",
       "solution": "Foi desenvolvido um redesign da marca, acompanhado de aplicações em materiais como embalagens, uniforme, cartão de visita, crachá e caneca, garantindo uma identidade visual consistente e fortalecendo o reconhecimento da empresa.",
       "tags": [
-        "Designer Gráfico"
+        "Designer Gráfico", "Identidade Visual", "Branding"
       ],
       "desafio": "Modernizar a identidade visual da AGILIMP, criando uma logo mais profissional, memorável e alinhada ao segmento de produtos de limpeza.",
       "proposta": "Foi desenvolvido um redesign da marca, acompanhado de aplicações em materiais como embalagens, uniforme, cartão de visita, crachá e caneca, garantindo uma identidade visual consistente e fortalecendo o reconhecimento da empresa.",
       "inDevelopment": false
     },
     {
-      "title": "Origatto",
-      "client": "Projeto Pessoal",
-      "date": "2026",
-      "image": "/img/Origatto/origatto.jpg",
-      "description": "Papelaria criativa inspirada na união entre criatividade, personalização e o conceito animal friendly.",
-      "fullDescription": "A Origatto nasceu da ideia de criar uma papelaria criativa que fosse além da venda de produtos personalizados. O objetivo era desenvolver uma marca que transmitisse afeto, criatividade e personalidade, conectando o universo da papelaria ao amor pelos animais. O nome Origatto surge da união entre \"Origami\" e \"Gatto\" (gato em italiano), representando a combinação entre criatividade, papel e o conceito animal friendly.",
-      "gallery": [
-        "/img/Origatto/origatto.jpg"
-      ],
-      "process": "O processo de criação iniciou-se com a definição dos valores da marca e do seu posicionamento. Em seguida, foram exploradas diferentes possibilidades de símbolos que conectassem papelaria e animais de forma orgânica. A solução escolhida surgiu a partir da simplificação geométrica de um gato abraçando elementos gráficos relacionados ao universo da papelaria. Foram realizados estudos de composição, equilíbrio visual, redução de formas e aplicação em diferentes escalas para garantir legibilidade e consistência da marca.",
-      "solution": "A solução final consiste em um símbolo minimalista que integra um gato estilizado, folhas de papel e um lápis em uma única composição visual. O gato representa acolhimento, personalidade e a proposta animal friendly da marca, enquanto os papéis remetem à criatividade, personalização e produção gráfica. Um detalhe em formato de adesivo parcialmente descolado reforça o conceito de papelaria criativa e destaca um dos principais produtos do segmento. A paleta de cores combina tons de azul-marinho, azul claro e pêssego, transmitindo profissionalismo, leveza e proximidade. O resultado é uma identidade visual moderna, amigável e memorável, capaz de representar a essência da Origatto em diferentes pontos de contato da marca.",
-      "tags": [
-        "Designer Gráfico"
-      ],
-      "desafio": "O principal desafio foi desenvolver uma marca que unisse dois universos distintos: a criatividade e funcionalidade da papelaria com a leveza e o carisma dos animais. Além disso, a identidade precisava fugir dos clichês comuns do segmento, como ícones genéricos de lápis, canetas ou folhas de papel isoladas, criando uma solução original, versátil e facilmente reconhecível em diferentes aplicações.",
-      "proposta": "O nome Origatto surge da combinação entre as palavras \"Origami\" e \"Gatto\" (gato em italiano), representando a união entre criatividade, papel e o conceito animal friendly. A inspiração visual veio da observação do comportamento dos gatos, conhecidos por sua curiosidade, personalidade e proximidade afetiva com as pessoas. Ao mesmo tempo, o universo do papel e das dobraduras serviu como referência para construir elementos visuais que remetessem à criação, personalização e expressão artística.",
-      "inDevelopment": true
-    },
-    {
       "title": "WeaveTrip",
       "client": "CEPEDI",
       "date": "2025",
-      "image": "/img/WeaveTrip/weavetrip.webp",
+      "image": "/img/WeaveTrip/mockup.webp",
       "description": "Plataforma de gestão de pacotes turísticos que centraliza reservas, usuários e ofertas de viagem.",
       "fullDescription": "Neste projeto, desenvolvi a WeaveTrip, uma plataforma de gestão e comercialização de pacotes turísticos criada para conectar administradores, empresas parceiras e clientes finais em um único ecossistema. A solução foi pensada para permitir que empresas do setor de turismo cadastrassem e gerenciassem seus próprios pacotes de viagem, utilizando uma estrutura White Label para oferecer uma experiência personalizada aos seus clientes.",
       "gallery": [
@@ -87,7 +68,7 @@
       "title": "Clipo",
       "client": "Projeto de estudo",
       "date": "2025",
-      "image": "/img/Clipo/clipo.webp",
+      "image": "/img/Clipo/mockup.webp",
       "description": "Aplicativo de vídeos com foco em praticidade, permitindo salvar, favoritar e assistir conteúdos posteriormente de forma intuitiva.",
       "fullDescription": "Neste projeto, desenvolvi um aplicativo de vídeos com foco em proporcionar uma experiência simples, intuitiva e organizada para usuários que consomem conteúdos digitais com frequência. Com a crescente quantidade de vídeos disponíveis em diferentes plataformas, muitas pessoas enfrentam dificuldades para acompanhar conteúdos de interesse, salvar recomendações e retomar vídeos posteriormente. O objetivo do projeto foi criar uma solução que centralizasse essa experiência, permitindo que os usuários encontrassem, organizassem e acessassem facilmente seus conteúdos favoritos, reduzindo o esforço necessário para gerenciar o que desejam assistir.",
       "process": "O desenvolvimento teve como ponto de partida a identificação de comportamentos comuns entre consumidores de vídeo, como salvar links em diferentes lugares, manter várias abas abertas ou esquecer conteúdos que pretendiam assistir posteriormente. A partir dessa análise, foram definidos os principais fluxos da aplicação, priorizando ações essenciais para uma experiência fluida: explorar conteúdos, assistir vídeos, favoritar itens e adicionar vídeos a uma lista de \"Assistir Mais Tarde\". Durante o processo de design, foram desenvolvidos wireframes e protótipos focados em simplicidade, clareza visual e facilidade de navegação, garantindo que os usuários pudessem realizar suas ações com o menor número possível de interações.",
@@ -112,7 +93,7 @@
       "title": "CheckAê",
       "client": "CPDS - UESB",
       "date": "2024",
-      "image": "/img/CheckAê/checkae.webp",
+      "image": "/img/CheckAê/mockup.webp",
       "description": "Plataforma digital para registro e controle de presenças.",
       "fullDescription": "Neste projeto, participei do desenvolvimento do CheckAê, uma plataforma digital voltada para o registro e controle de presenças. Minha principal contribuição esteve na criação da identidade visual da solução, desde a definição do nome até o desenvolvimento da logomarca. Em conjunto com a equipe, buscamos criar uma marca simples, memorável e próxima do público, utilizando uma expressão popular que transmitisse facilidade e informalidade. O resultado foi o nome CheckAê, acompanhado de uma identidade visual inspirada no conceito de check-in e confirmação de presença.",
       "gallery": [
@@ -132,7 +113,7 @@
       "title": "Espaços Dinamizadores",
       "client": "CPDS",
       "date": "2023",
-      "image": "/img/EspaçosDinamizadores/espacosdinamizadores.webp",
+      "image": "/img/EspaçosDinamizadores/mockup.webp",
       "description": "Sistema para gestão de atividades em ambientes de inovação.",
       "gallery": [
         "/img/EspaçosDinamizadores/espacosdinamizadores.webp",
