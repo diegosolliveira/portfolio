@@ -1,37 +1,6 @@
 {
   "projects": [
     {
-      "title": "AGILIMP",
-      "client": "Produtos de Limpeza",
-      "date": "2026",
-      "image": "/img/AgiLimp/mockup.webp",
-      "siteUrl": "https://www.behance.net/gallery/252153821/Manual-da-Marca-AgiLimp",
-      "description": "AGILIMP é uma empresa especializada em produtos de limpeza, oferecendo soluções práticas, eficientes e de qualidade para higienização de diversos ambientes.",
-      "fullDescription": "A proposta buscou desenvolver uma identidade visual que transmitisse limpeza, confiança, qualidade e modernidade. Para isso, foram utilizadas tonalidades de azul, associadas à higiene e credibilidade, complementadas por detalhes em azul-claro que remetem à água, brilho e sensação de limpeza. Os elementos gráficos, como o traço fluido, as bolhas e o brilho, reforçam visualmente o segmento da empresa sem comprometer a simplicidade da marca, tornando-a mais versátil para aplicações impressas e digitais. O projeto foi finalizado com o desenvolvimento de materiais institucionais, garantindo unidade visual e fortalecendo o reconhecimento da marca em todos os seus pontos de contato.",
-      "gallery": [
-        "/img/AgiLimp/agilimp.webp",
-        "/img/AgiLimp/mockup3.webp",
-        "/img/AgiLimp/mockup.webp",
-        "/img/AgiLimp/variacoes.webp", 
-        "/img/AgiLimp/mockup2.webp",
-        "/img/AgiLimp/mockup4.webp",
-        "/img/AgiLimp/paleta.webp",
-        "/img/AgiLimp/mockup5.webp",
-        "/img/AgiLimp/mockup6.webp",
-        "/img/AgiLimp/tipografia2.webp",
-        "/img/AgiLimp/tipografia1.webp",
-        "/img/AgiLimp/mockup7.webp"
-      ],
-      "process": "O projeto teve início com uma reunião de alinhamento com o cliente, na qual foram discutidos a história da AGILIMP, seus objetivos, o motivo do redesign e as expectativas para a nova identidade visual. A partir dessas informações, foi desenvolvido o redesign da marca e suas aplicações, garantindo uma solução alinhada aos valores e ao posicionamento da empresa.",
-      "solution": "Foi desenvolvido um redesign da marca, acompanhado de aplicações em materiais como embalagens, uniforme, cartão de visita, crachá e caneca, garantindo uma identidade visual consistente e fortalecendo o reconhecimento da empresa.",
-      "tags": [
-        "Designer Gráfico", "Identidade Visual", "Branding"
-      ],
-      "desafio": "Modernizar a identidade visual da AGILIMP, criando uma logo mais profissional, memorável e alinhada ao segmento de produtos de limpeza.",
-      "proposta": "Foi desenvolvido um redesign da marca, acompanhado de aplicações em materiais como embalagens, uniforme, cartão de visita, crachá e caneca, garantindo uma identidade visual consistente e fortalecendo o reconhecimento da empresa.",
-      "inDevelopment": false
-    },
-    {
       "title": "WeaveTrip",
       "client": "CEPEDI",
       "date": "2025",
