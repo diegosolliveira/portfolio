@@ -1,31 +1,31 @@
 :root {
-  /* Fundos */
-  --bg: #13131a;
-  --surface: #1b1b26;
-  --surface-hover: #242433;
-  --border: #2b2b3a;
+    /* Fundos */
+    --bg: #13131a;
+    --surface: #1b1b26;
+    --surface-hover: #242433;
+    --border: #2b2b3a;
 
-  /* Vidro (header flutuante) */
-  --glass: rgba(27, 27, 38, 0.6);
-  --glass-border: rgba(230, 228, 238, 0.1);
-  --shadow: rgba(0, 0, 0, 0.4);
+    /* Vidro (header flutuante) */
+    --glass: rgba(27, 27, 38, 0.6);
+    --glass-border: rgba(230, 228, 238, 0.1);
+    --shadow: rgba(0, 0, 0, 0.4);
 
-  /* Textos */
-  --text: #e6e4ee;
-  --text-muted: #9593a8;
+    /* Textos */
+    --text: #e6e4ee;
+    --text-muted: #9593a8;
 
-  /* Destaque (lavanda) */
-  --accent: #b4a7e0;
-  --accent-hover: #c6bbec;
-  --accent-soft: rgba(180, 167, 224, 0.14);
-  --on-accent: #13131a;
+    /* Destaque (lavanda) */
+    --accent: #b4a7e0;
+    --accent-hover: #c6bbec;
+    --accent-soft: rgba(180, 167, 224, 0.14);
+    --on-accent: #13131a;
 
-  /* Status */
-  --success: #7fc8a0;
+    /* Status */
+    --success: #7fc8a0;
 
-  /* Tipografia */
-  --font-body: "Zalando Sans Expanded", sans-serif;
-  --font-heading: "Poppins", var(--font-body);
+    /* Tipografia */
+    --font-body: "Zalando Sans Expanded", sans-serif;
+    --font-heading: "Poppins", var(--font-body);
 }
 
 body {
@@ -34,7 +34,7 @@ body {
     color: #ffffff;
     background-color: #0b0b0b;
     background-size: 60px 60px;
-    
+
 }
 
 footer {
@@ -132,6 +132,56 @@ footer::before {
     color: var(--text-muted);
 }
 
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 20px;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-muted);
+
+    background-color: var(--bg);
+    background-image:
+        radial-gradient(ellipse at 50% 0%,
+            rgba(180, 167, 224, 0.10),
+            transparent 65%);
+}
+
+/* Linha superior em degradê */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 70%;
+    max-width: 900px;
+    height: 1px;
+
+    background: linear-gradient(90deg,
+            transparent,
+            var(--accent),
+            transparent);
+
+    opacity: 0.45;
+}
+
+/* Responsivo */
+
 @media (max-width: 1024px) {
     .section {
         padding: 62px 28px;
@@ -155,6 +205,10 @@ footer::before {
 @media (max-width: 768px) {
     .text-title {
         font-size: 22px;
+    }
+
+    footer {
+        padding-bottom: 126px !important;
     }
 }
 
