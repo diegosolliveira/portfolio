@@ -1,0 +1,167 @@
+:root {
+  /* Fundos */
+  --bg: #13131a;
+  --surface: #1b1b26;
+  --surface-hover: #242433;
+  --border: #2b2b3a;
+
+  /* Vidro (header flutuante) */
+  --glass: rgba(27, 27, 38, 0.6);
+  --glass-border: rgba(230, 228, 238, 0.1);
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  /* Textos */
+  --text: #e6e4ee;
+  --text-muted: #9593a8;
+
+  /* Destaque (lavanda) */
+  --accent: #b4a7e0;
+  --accent-hover: #c6bbec;
+  --accent-soft: rgba(180, 167, 224, 0.14);
+  --on-accent: #13131a;
+
+  /* Status */
+  --success: #7fc8a0;
+
+  /* Tipografia */
+  --font-body: "Zalando Sans Expanded", sans-serif;
+  --font-heading: "Poppins", var(--font-body);
+}
+
+body {
+    margin: 0;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    color: #ffffff;
+    background-color: #0b0b0b;
+    background-size: 60px 60px;
+    
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    color: #a8a8a8;
+    padding: 18px;
+    font-size: 0.8rem;
+    background: transparent;
+}
+
+footer::before {
+    content: "";
+    background: linear-gradient(90deg, transparent, #ff6600, transparent);
+    width: 70%;
+    height: 0.5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-top: 0.5px solid #ffffff12;
+    background: rgba(17, 17, 17);
+    padding: 42px 0;
+}
+
+.section.aboutme {
+    width: 100%;
+    background-color: rgb(10 10 10);
+}
+
+/* ========== SEÇÕES (compartilhado) ========== */
+.section {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 42px 0;
+    border-top: 0.5px solid var(--border);
+    background: var(--bg);
+}
+
+.card-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 92px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card-principal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.subtitle-info {
+    display: flex;
+    align-items: center;
+}
+
+.subtitle-line {
+    display: inline-block;
+    width: 14px;
+    height: 0.5px;
+    margin-right: 8px;
+    background-color: var(--accent);
+}
+
+.subtitle {
+    font-size: 10px;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.text-title {
+    margin: 0;
+    font-size: 46px;
+    font-weight: 800;
+}
+
+.highlight3 {
+    width: 80%;
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 200;
+    color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding: 62px 28px;
+    }
+
+    .card-principal {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .text-title {
+        font-size: 28px;
+    }
+
+    .highlight3 {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-title {
+        font-size: 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-principal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

@@ -1,0 +1,252 @@
+
+/* =========================
+   SEÇÃO DE CONTATO
+========================= */
+
+.card-principal.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 64px;
+    width: 100%;
+}
+
+/* LADO ESQUERDO */
+
+.infos-contact {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.card-principal.contact .subtitle-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-principal.contact .subtitle-line {
+    width: 14px;
+    height: 1px;
+    background-color: var(--accent);
+    border-radius: 50%;
+}
+
+.card-principal.contact .subtitle {
+    font-size: 10px;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.card-principal.contact .text-title {
+    font-family: var(--font-heading);
+    font-size: 46px;
+    color: var(--text);
+    margin: 0;
+}
+
+.card-principal.contact .highlight3 {
+    display: block;
+    width: 85%;
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+/* BOTÃO DE E-MAIL */
+
+.card-principal.contact .email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: fit-content;
+    margin-top: 12px;
+    padding: 16px 26px;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-principal.contact .email:hover {
+    color: var(--on-accent);
+    background-color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.card-principal.contact .arrow {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.card-principal.contact .email:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* LADO DIREITO - REDES SOCIAIS */
+
+.card-principal.contact .sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 38%;
+    min-width: 300px;
+}
+
+.card-principal.contact .myname {
+    color: var(--text);
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-principal.contact .div-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+/* CARTÕES DAS REDES */
+
+.card-principal.contact .stackss {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 20px;
+
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    text-align: left;
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card-principal.contact .stackss:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px var(--shadow);
+}
+
+/* ÍCONES */
+
+.card-principal.contact .box-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    background-color: var(--accent-soft);
+    border-radius: 10px;
+}
+
+.card-principal.contact .box-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* TEXTOS DOS CARTÕES */
+
+.card-principal.contact .sociais-names {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.card-principal.contact .sociais-names p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.card-principal.contact .sociais-names span {
+    font-size: 11px;
+    line-height: 1.4;
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+    .card-principal.contact {
+        flex-direction: column;
+        gap: 42px;
+    }
+
+    .card-principal.contact .sociais {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .card-principal.contact .highlight3 {
+        width: 100%;
+    }
+
+    .card-principal.contact .email {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-principal.contact {
+        gap: 36px;
+    }
+
+    .card-principal.contact .text-title {
+        font-size: 26px;
+    }
+
+    .card-principal.contact .highlight3 {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .card-principal.contact .email {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 13px;
+        padding: 14px 20px;
+    }
+
+    .card-principal.contact .stackss {
+        padding: 16px;
+    }
+
+    .card-principal.contact .sociais-names span {
+        font-size: 10px;
+    }
+}

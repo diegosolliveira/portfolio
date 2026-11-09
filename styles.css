@@ -9,15 +9,6 @@ body {
     background-size: 60px 60px;
 }
 
-body.light {
-    color: #303030;
-    background: #f5f2ef;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.055) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 0, 0, 0.055) 1px, transparent 1px);
-    background-size: 60px 60px;
-}
-
 .project-card {
     position: relative;
     width: 100%;
@@ -176,11 +167,11 @@ body.light {
     display: none;
 }
 
-body.light .div-logo .logowhite {
+ .div-logo .logowhite {
     display: block;
 }
 
-body.light .div-logo .logo {
+ .div-logo .logo {
     display: none;
 }
 
@@ -214,7 +205,7 @@ canvas {
     }
 }
 
-body.light .div-nav .button-cv {
+ .div-nav .button-cv {
     border: 0.5px solid rgba(0, 0, 0, 0.12);
     color: #303030;
 }
@@ -292,7 +283,7 @@ body.light .div-nav .button-cv {
     }
 }
 
-body.light .card-chips {
+ .card-chips {
     background-color: rgba(158, 158, 158, 0.15);
     border: 0.5px solid rgba(7, 7, 7, 0.1);
 
@@ -301,13 +292,13 @@ body.light .card-chips {
     }
 }
 
-body.light .card-principal.aboutme .div-infos {
+ .card-principal.aboutme .div-infos {
     .subtitle-info {
         color: #1111118e;
     }
 }
 
-body.light .card-principal.aboutme .div-infos {
+ .card-principal.aboutme .div-infos {
     .skils {
         p {
             background-color: #ff66001a;
@@ -321,7 +312,7 @@ body.light .card-principal.aboutme .div-infos {
     }
 }
 
-body.light #themeToggle {
+ #themeToggle {
     border: 0.5px solid rgba(0, 0, 0, 0.12);
     color: #303030;
 }
@@ -332,19 +323,19 @@ body.light #themeToggle {
     color: #ff6600;
 }
 
-body.light #themeToggle:hover {
+ #themeToggle:hover {
     border: 0.5px solid #ff660044;
     background-color: #ff66001a;
     color: #ff6600;
 }
 
-body.light .card {
+ .card {
     p {
         color: #616161;
     }
 }
 
-body.light .card-container .card {
+ .card-container .card {
     background-color: #ffffff;
     border: 0.5px solid rgba(151, 151, 151, 0.2);
 }
@@ -357,11 +348,11 @@ body.light .card-container .card {
     height: 98vh;
 }
 
-body.light .home {
+ .home {
     background-color: #9c92920c;
 }
 
-body.light .home .card-home .disponivel {
+ .home .card-home .disponivel {
     background-color: rgb(255, 255, 255);
     border: 0.5px solid rgba(151, 151, 151, 0.44);
 
@@ -478,7 +469,7 @@ body.light .home .card-home .disponivel {
     }
 }
 
-body.light .home .card-home {
+ .home .card-home {
     .button-contact {
         background: rgba(46, 46, 46, 0.05);
         border: 0.5px solid rgba(31, 31, 31, 0.2);
@@ -492,7 +483,7 @@ body.light .home .card-home {
     }
 }
 
-body.light .home .card-home {
+ .home .card-home {
     h1 {
         color: #303030;
     }
@@ -517,7 +508,7 @@ body.light .home .card-home {
     margin-bottom: 0px;
 }
 
-body.light .card-principal.contact .myname {
+ .card-principal.contact .myname {
     color: #303030;
 }
 
@@ -549,7 +540,7 @@ body.light .card-principal.contact .myname {
     color: rgb(255, 255, 255);
 }
 
-body.light .highlight {
+ .highlight {
     color: #303030;
 }
 
@@ -560,7 +551,7 @@ body.light .highlight {
     text-align: left;
 }
 
-body.light .highlight2 {
+ .highlight2 {
     color: #303030;
 }
 
@@ -577,7 +568,7 @@ body.light .highlight2 {
     font-weight: 600;
 }
 
-body.light .highlight3 {
+ .highlight3 {
     color: #616161;
 }
 
@@ -588,19 +579,7 @@ body.light .highlight3 {
     color: #ff6600;
 }
 
-@keyframes blink {
 
-    0%,
-    50%,
-    100% {
-        opacity: 1;
-    }
-
-    25%,
-    75% {
-        opacity: 0;
-    }
-}
 
 header {
     position: fixed;
@@ -630,24 +609,24 @@ header h1 {
     color: #ffffff;
 }
 
-body.light header {
+ header {
     border: 0.5px solid rgba(0, 0, 0, 0.12);
 }
 
-body.light header h1 {
+ header h1 {
     color: #303030;
 }
 
-body.light nav a {
+ nav a {
     color: #303030;
     font-weight: 100;
 }
 
-body.light nav a:hover {
+ nav a:hover {
     color: #ff6600;
 }
 
-body.light nav a.active {
+ nav a.active {
     color: #ff6600;
 }
 
@@ -725,7 +704,7 @@ nav a.active {
     transition: color 0.2s ease, border-color 0.1s ease;
 }
 
-body.light .email {
+ .email {
     border: 1px solid #616161;
     color: #616161;
 }
@@ -736,7 +715,7 @@ body.light .email {
     border-color: #ff6600;
 }
 
-body.light .email:hover {
+ .email:hover {
     color: #ffffff;
     background-color: #ff6600;
     border-color: #ff6600;
@@ -808,7 +787,7 @@ body.light .email:hover {
     border-radius: 2px;
 }
 
-body.light .modal-line {
+ .modal-line {
     background-color: #00000015;
 }
 
@@ -821,7 +800,7 @@ body.light .modal-line {
     color: #a8a8a8;
 }
 
-body.light .modal-date {
+ .modal-date {
     color: #616161;
     background-color: rgba(145, 145, 145, 0.11);
     border: 0.5px solid rgba(151, 151, 151, 0.2);
@@ -843,7 +822,7 @@ body.light .modal-date {
     transition: border-color 0.2s, color 0.2s;
 }
 
-body.light .modal-site {
+ .modal-site {
     color: #616161;
     background-color: rgba(145, 145, 145, 0.11);
     border: 0.5px solid rgba(151, 151, 151, 0.2);
@@ -855,7 +834,7 @@ body.light .modal-site {
     color: #ff6600;
 }
 
-body.light .modal-site:hover {
+ .modal-site:hover {
     border-color: rgba(255, 102, 0, 0.5);
     color: #ff6600;
 }
@@ -887,7 +866,7 @@ body.light .modal-site:hover {
     padding: 22px;
 }
 
-body.light .modal-desafio {
+ .modal-desafio {
     background-color: rgba(255, 255, 255, 0.4);
     border: 0.5px solid rgba(151, 151, 151, 0.2);
 }
@@ -901,7 +880,7 @@ body.light .modal-desafio {
     padding: 22px;
 }
 
-body.light .modal-proposta {
+ .modal-proposta {
     background-color: rgba(255, 255, 255, 0.4);
     border: 0.5px solid rgba(151, 151, 151, 0.2);
 }
@@ -945,7 +924,7 @@ body.light .modal-proposta {
     }
 }
 
-body.light .modal-icon-triangle {
+ .modal-icon-triangle {
     background-color: #e16b6b3f;
 }
 
@@ -965,7 +944,7 @@ body.light .modal-icon-triangle {
     }
 }
 
-body.light .modal-icon-bulb {
+ .modal-icon-bulb {
     background-color: #b2f9c58a;
 }
 
@@ -1015,7 +994,7 @@ body.light .modal-icon-bulb {
     overflow: auto;
 }
 
-body.light .modal-box {
+ .modal-box {
     background: #f5f2ef;
 }
 
@@ -1096,9 +1075,9 @@ body.light .modal-box {
     line-height: 1.6rem;
 }
 
-body.light .modal-description,
-body.light .modal-process-description,
-body.light .modal-solution-description {
+ .modal-description,
+ .modal-process-description,
+ .modal-solution-description {
     color: #616161;
 }
 
@@ -1163,7 +1142,7 @@ body.light .modal-solution-description {
     }
 }
 
-body.light .modal-tag {
+ .modal-tag {
     color: #616161;
     background-color: rgba(145, 145, 145, 0.11);
     border: 0.5px solid rgba(151, 151, 151, 0.2);
@@ -1279,7 +1258,7 @@ body.light .modal-tag {
     flex-shrink: 0;
 }
 
-body.light .project-date {
+ .project-date {
     color: #616161;
     background-color: rgba(145, 145, 145, 0.11);
     border: 0.5px solid rgba(151, 151, 151, 0.2);
@@ -1292,8 +1271,8 @@ body.light .project-date {
     line-height: 1.6rem;
 }
 
-body.light .modal-desafio-description,
-body.light .modal-proposta-description {
+ .modal-desafio-description,
+ .modal-proposta-description {
     color: #616161;
 }
 
@@ -1359,7 +1338,7 @@ body.light .modal-proposta-description {
     }
 }
 
-body.light .stacks {
+ .stacks {
     color: #616161;
     background-color: rgb(255, 255, 255);
     border: 0.5px solid rgba(151, 151, 151, 0.4);
@@ -1369,7 +1348,7 @@ body.light .stacks {
     color: #ffffffa4;
 }
 
-body.light .card-principal.wcid .infos-aboutme p {
+ .card-principal.wcid .infos-aboutme p {
     color: #616161;
 }
 
@@ -1425,7 +1404,7 @@ body.light .card-principal.wcid .infos-aboutme p {
     transform: translateY(-4px);
 }
 
-body.light .card-principal.contact .sociais .div-sociais .stackss {
+ .card-principal.contact .sociais .div-sociais .stackss {
     background-color: rgb(255, 255, 255);
     border: 0.5px solid rgba(151, 151, 151, 0.3);
 
@@ -1465,25 +1444,25 @@ body.light .card-principal.contact .sociais .div-sociais .stackss {
     text-decoration: none;
 }
 
-body.light .card-principal.contact .sociais a {
+ .card-principal.contact .sociais a {
     color: #616161;
 }
 
-body.light .card-principal.aboutme p,
+ .card-principal.aboutme p,
 .card-principal.wcid p,
 .card-principal.contact p {
     color: #616161;
 }
 
-body.light .card-principal.aboutme p {
+ .card-principal.aboutme p {
     color: #616161;
 }
 
-body.light .section.aboutme {
+ .section.aboutme {
     background-color: #ede9e4;
 }
 
-body.light .section {
+ .section {
     background: #f5f2ef;
     border-top: 0.5px solid rgba(151, 151, 151, 0.2);
 }
@@ -1515,13 +1494,13 @@ body.light .section {
     margin-top: auto;
 }
 
-body.light .card-principal.projects .card .div-infos p {
+ .card-principal.projects .card .div-infos p {
     color: #616161;
     background-color: rgba(145, 145, 145, 0.11);
     border: 0.5px solid rgba(151, 151, 151, 0.2);
 }
 
-body.light .card-principal.projects p {
+ .card-principal.projects p {
     color: #616161;
 }
 
@@ -1578,7 +1557,7 @@ body.light .card-principal.projects p {
     margin-top: 36px;
 }
 
-body.light .what-icando {
+ .what-icando {
     background-color: #ffffff;
     border: 0.5px solid rgba(151, 151, 151, 0.2);
 
@@ -1691,7 +1670,7 @@ body.light .what-icando {
     margin: 0px;
 }
 
-body.light .card-principal.aboutme .div-infos p {
+ .card-principal.aboutme .div-infos p {
     color: #616161;
     background-color: rgb(255, 255, 255);
     border: 0.5px solid rgba(151, 151, 151, 0.44);
@@ -1832,7 +1811,7 @@ body.light .card-principal.aboutme .div-infos p {
 }
 
 
-body.light .div-infos p {
+ .div-infos p {
     color: rgb(204, 65, 0);
 }
 
@@ -1880,7 +1859,7 @@ body.light .div-infos p {
     transition: .3s ease;
 }
 
-body.light .carousel-dots span {
+ .carousel-dots span {
     background: #a8a8a8;
 }
 
@@ -1889,7 +1868,7 @@ body.light .carousel-dots span {
     background: #ff6600;
 }
 
-body.light .carousel-dots span.active {
+ .carousel-dots span.active {
     background: #ff6600;
 }
 
@@ -1920,12 +1899,12 @@ body.light .carousel-dots span.active {
     opacity: 1;
 }
 
-body.light .bi-chevron-left:hover {
+ .bi-chevron-left:hover {
     border: solid 0.5px #ff660070;
     background-color: #ff66002d;
 }
 
-body.light .bi-chevron-right:hover {
+ .bi-chevron-right:hover {
     border: solid 0.5px #ff660070;
     background-color: #ff66002d;
 }
@@ -1949,11 +1928,11 @@ body.light .bi-chevron-right:hover {
     font-size: 12px;
 }
 
-body.light .what-icando .whats-important span {
+ .what-icando .whats-important span {
     color: #ff6600;
 }
 
-body.light .box-icon {
+ .box-icon {
     background-color: #fdd5ad;
 }
 
@@ -1991,7 +1970,7 @@ footer::before {
     transform: translate(-50%);
 }
 
-body.light footer {
+ footer {
     background-color: #ffffff70;
     color: #616161;
 }
@@ -2233,7 +2212,7 @@ body.light footer {
         cursor: pointer;
     }
 
-    body.light .menu-toggle {
+     .menu-toggle {
         color: #303030;
     }
 
@@ -2266,7 +2245,7 @@ body.light footer {
         border-radius: 16px;
     }
 
-    body.light .div-nav {
+     .div-nav {
         background: rgb(255, 255, 255);
         border: 1px solid rgba(151, 151, 151, 0.2);
     }
@@ -2371,9 +2350,9 @@ body.light footer {
         flex: 0 0 125%;
     }
 
-    .carousel-dots {
+    /* .carousel-dots {
         display: none;
-    }
+    } */
 
     ::-webkit-scrollbar {
         width: 6px;

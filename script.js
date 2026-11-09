@@ -47,7 +47,6 @@ sections2.forEach(section => {
 const words = [
   "UI/UX Designer. ",
   "Product Designer. ",
-  "Designer Gráfico. "
 ];
 
 let wordIndex = 0;

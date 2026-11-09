@@ -1,0 +1,299 @@
+/* ========== CARROSSEL ========== */
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.carousel {
+    width: 100%;
+    padding: 24px 0 12px;
+    overflow: hidden;       /* corta os cards laterais nas bordas */
+    touch-action: pan-y;    /* a rolagem vertical continua; o horizontal vira swipe */
+}
+
+.card-container {
+    --step: 94%;            /* distância entre os cards, em % da largura do card */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* ========== CARD ========== */
+.card {
+    --offset: 0;
+    --scale: 1;
+
+    grid-area: 1 / 1;       /* todos os cards na mesma célula */
+    width: 58%;
+    cursor: pointer;
+    transform: translateX(calc(var(--offset) * var(--step))) scale(var(--scale));
+    transition:
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.45s ease,
+        filter 0.45s ease;
+    will-change: transform, opacity;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.card.is-active {
+    --scale: 1;
+    opacity: 1;
+    z-index: 3;
+}
+
+.card.is-side {
+    --scale: 0.84;
+    opacity: 0.5;
+    filter: saturate(0.8);
+    z-index: 2;
+}
+
+.card.is-side:hover {
+    opacity: 0.75;
+}
+
+.card.is-hidden {
+    --scale: 0.7;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.card:focus-visible {
+    outline: none;
+}
+
+.card:focus-visible .project-card {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* ========== CONTEÚDO DO CARD ========== */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 0.5px solid var(--accent-soft);
+    background: var(--surface);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    border: 0.5px solid var(--accent-soft);
+}
+
+.card.is-active .project-card {
+    border-color: var(--border);
+    box-shadow: 0 8px 13px var(--shadow);
+}
+
+.card.is-active .project-card:hover {
+    border-color: var(--accent);
+}
+
+.project-media {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--surface-hover);
+}
+
+.project-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-user-drag: none;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card.is-active:hover .project-bg {
+    transform: scale(1.04);
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 22px 28px 26px;
+}
+
+.project-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.project-category {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.project-arrow {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--text-muted);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card.is-active:hover .project-arrow {
+    color: var(--accent);
+    transform: translate(2px, -2px);
+}
+
+.project-status {
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.project-info h3 {
+    margin: 4px 0 0;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text);
+}
+
+.project-info p {
+    max-width: 560px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.project-tags span {
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+}
+
+/* ========== SETAS ========== */
+.carousel-btn {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--text-muted);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.carousel-btn:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent);
+    opacity: 1;
+}
+
+.carousel-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ========== INDICADORES ========== */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 14px;
+}
+
+.carousel-dots span {
+    width: 12px;
+    height: 4px;
+    border-radius: 999px;
+    background: rgba(230, 228, 238, 0.2);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.carousel-dots span.active {
+    width: 32px;
+    background: var(--accent);
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 1024px) {
+    .carousel-btn {
+        display: none;      /* no celular a navegação é por swipe */
+    }
+
+    .card {
+        width: 72%;
+    }
+
+    .project-info h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        --step: 88%;
+    }
+
+    .card {
+        width: 78%;
+    }
+
+    .card.is-side {
+        --scale: 0.88;
+    }
+
+    .project-info {
+        padding: 16px 18px 20px;
+    }
+
+    .project-info h3 {
+        font-size: 18px;
+    }
+
+    .project-info p {
+        font-size: 12px;
+        -webkit-line-clamp: 2;
+    }
+
+    .project-tags span {
+        font-size: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    .project-bg {
+        transition: none;
+    }
+}
