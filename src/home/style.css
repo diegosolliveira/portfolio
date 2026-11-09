@@ -251,7 +251,7 @@ footer::before {
 /* Celulares */
 @media (max-width: 768px) {
     .home {
-        min-height: 85vh;
+        min-height: 55vh;
         padding: 90px 20px 100px;
     }
 
