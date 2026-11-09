@@ -6,10 +6,11 @@
 .card-principal.contact {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
-    gap: 64px;
+    gap: 68px;
     width: 100%;
+    min-height: 46vh;
 }
 
 /* LADO ESQUERDO */
